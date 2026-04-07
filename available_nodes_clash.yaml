@@ -1,16 +1,32 @@
 proxies:
-- name: 🇺🇸_US_美国_3
-  type: vless
+- name: Shopify
   server: www.shopify.com
-  port: 2087
-  uuid: 77777777-6663-4ef2-b26b-ed2d70642678
+  port: 2095
+  client-fingerprint: randomized
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  tfo: false
+  skip-cert-verify: false
   network: ws
-  servername: xsfvxv55x1.fx03.ccwu.cc
-  tls: true
   ws-opts:
-    path: /?ed=2560
+    path: /
     headers:
-      Host: xsfvxv55x1.fx03.ccwu.cc
+      Host: cnmfangbinxing.cnmfangbinxing-l.workers.dev
+- name: 🇩🇪_DE_德国
+  type: vless
+  server: f2.hamrahconf.ir
+  port: 8443
+  uuid: f85c9efa-da9d-4f86-a497-e92a89ffb572
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: p3-sync-06.secoxi.site
+  tls: true
+  sni: sp.secoxi.site
+  skip-cert-verify: false
 - name: WTO
   server: www.wto.org
   port: 2095
@@ -24,21 +40,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-- name: npmjs
-  server: www.npmjs.com
-  port: 2095
-  client-fingerprint: randomized
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
+      Host: cnmfangbinxing.cnmfangbinxing-l.workers.dev
 - name: openai
   server: openai.com
   port: 2095
@@ -52,9 +54,9 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-- name: Cloudflare Developers
-  server: developers.cloudflare.com
+      Host: cnmfangbinxing.cnmfangbinxing-l.workers.dev
+- name: npmjs
+  server: www.npmjs.com
   port: 2095
   client-fingerprint: randomized
   type: vless
@@ -66,49 +68,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-- name: Cloudflare ns
-  server: ns.cloudflare.com
-  port: 2095
-  client-fingerprint: randomized
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-- name: Cloudflare Support
-  server: support.cloudflare.com
-  port: 2095
-  client-fingerprint: randomized
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-- name: Cloudflare Docs
-  server: docs.cloudflare.com
-  port: 2095
-  client-fingerprint: randomized
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
+      Host: cnmfangbinxing.cnmfangbinxing-l.workers.dev
 - name: Cloudflare DNS
   server: cloudflare-dns.com
   port: 2095
@@ -122,9 +82,9 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-- name: Udemy
-  server: www.udemy.com
+      Host: cnmfangbinxing.cnmfangbinxing-l.workers.dev
+- name: Cloudflare ns
+  server: ns.cloudflare.com
   port: 2095
   client-fingerprint: randomized
   type: vless
@@ -136,7 +96,35 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
+      Host: cnmfangbinxing.cnmfangbinxing-l.workers.dev
+- name: Cloudflare Developers
+  server: developers.cloudflare.com
+  port: 2095
+  client-fingerprint: randomized
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-l.workers.dev
+- name: Cloudflare Docs
+  server: docs.cloudflare.com
+  port: 2095
+  client-fingerprint: randomized
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-l.workers.dev
 - name: disney_netflix_GB
   server: one.dash.cloudflare.com
   type: vless
@@ -152,70 +140,48 @@ proxies:
     headers:
       Host: vbxkgv81x.danfeng.qzz.io
   packet-encoding: ''
-- name: Epicgames
-  server: www.epicgames.com
-  port: 2095
-  client-fingerprint: randomized
+- name: 🇺🇸_US_美国
   type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-- name: 🇺🇸_US_美国->🇸🇬_SG_新加坡
-  type: vless
-  server: partner.zoom.us
-  port: 8443
-  uuid: 39eb8c33-ee7f-4980-b3e5-684aaf390f56
-  network: ws
-  servername: darknet-free.alexid.org
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: darknet-free.alexid.org
-- name: Shopify
   server: www.shopify.com
-  port: 2095
-  client-fingerprint: randomized
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  type: vmess
-  server: cn02.365cloud5878.com
-  port: 6044
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-- name: 🇺🇸_US_美国->🇸🇬_SG_新加坡
-  type: vless
-  server: ev.zoom.us
-  port: 8443
-  uuid: 39eb8c33-ee7f-4980-b3e5-684aaf390f56
+  port: 2087
+  uuid: 77777777-6663-4ef2-b26b-ed2d70642678
   udp: true
   network: ws
   ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: xsfvxv55x1.fx03.ccwu.cc
+  tls: true
+  sni: xsfvxv55x1.fx03.ccwu.cc
+  skip-cert-verify: false
+- name: Cdnjs
+  server: cdnjs.com
+  port: 2095
+  client-fingerprint: randomized
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
     path: /
     headers:
-      Host: darknet-free.alexid.org
-  tls: true
-  sni: darknet-free.alexid.org
+      Host: cnmfangbinxing.cnmfangbinxing-l.workers.dev
+- name: Cloudflare Support
+  server: support.cloudflare.com
+  port: 2095
+  client-fingerprint: randomized
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  tfo: false
   skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-l.workers.dev
 - name: Cloudflare blog
   server: blog.cloudflare.com
   port: 2095
@@ -229,30 +195,62 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-- name: ⚠️ 当前套餐已到期或超量
-  type: hysteria2
-  server: starlink-us2.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 25131
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  udp: true
-- name: disney_netflix_GB
-  server: notability.com
+      Host: cnmfangbinxing.cnmfangbinxing-l.workers.dev
+- name: Csgo
+  server: www.csgo.net
+  port: 2095
+  client-fingerprint: randomized
   type: vless
-  port: 2053
-  udp: true
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  tfo: false
+  skip-cert-verify: false
   network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-l.workers.dev
+- name: FBI
+  server: www.fbi.gov
+  port: 2095
+  client-fingerprint: randomized
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-l.workers.dev
+- name: Epicgames
+  server: www.epicgames.com
+  port: 2095
+  client-fingerprint: randomized
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-l.workers.dev
+- name: 🇺🇸_US_美国->🇸🇬_SG_新加坡
+  type: vless
+  server: partner.zoom.us
+  port: 8443
+  uuid: 39eb8c33-ee7f-4980-b3e5-684aaf390f56
+  network: ws
+  servername: darknet-free.alexid.org
   tls: true
   client-fingerprint: chrome
-  servername: vbxkgv81x.danfeng.qzz.io
   ws-opts:
-    path: /danfeng?ed=2560
+    path: /
     headers:
-      Host: vbxkgv81x.danfeng.qzz.io
-  packet-encoding: ''
+      Host: darknet-free.alexid.org
 - name: disney_netflix_GB
   server: bestcf.030101.xyz
   type: vless
@@ -268,182 +266,6 @@ proxies:
     headers:
       Host: vbxkgv81x.danfeng.qzz.io
   packet-encoding: ''
-- name: Csgo
-  server: www.csgo.net
-  port: 2095
-  client-fingerprint: randomized
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-- name: 🇺🇸_US_美国->🇯🇵_JP_日本
-  type: vless
-  server: news.zoom.us
-  port: 8443
-  uuid: 39eb8c33-ee7f-4980-b3e5-684aaf390f56
-  network: ws
-  servername: darknet-free.alexid.org
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: darknet-free.alexid.org
-- name: 未知
-  type: ss
-  server: gia_us00.07c06051-81fd-4aa4-a94e-a0860315df8f.org
-  port: 14999
-  cipher: 2022-blake3-aes-256-gcm
-  password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
-- name: whatismyip
-  server: www.whatismyip.net
-  port: 2095
-  client-fingerprint: randomized
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-- name: disney_netflix_US |71.22Mb
-  server: 694ebcd0-td8hs0-txfm0f-1qxa1.sj.oshuawei.com
-  type: anytls
-  port: 8443
-  udp: true
-  skip-cert-verify: true
-  password: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
-- name: 洛杉矶 [ 1X ]  A
-  type: ss
-  server: a009.standard-nodes-chickenfarms.com
-  port: 50000
-  cipher: aes-256-gcm
-  password: 95c9ff2e-c881-4005-837c-c1e77ebac747
-  udp: true
-- name: netflix_SG |81.23Mb
-  server: webmail.eclass.lk
-  type: vless
-  port: 2096
-  udp: true
-  uuid: b8ae3c37-37d6-4d4d-93fc-1ce0bc329ba0
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  servername: free-server.techsonic.ggff.net
-  ws-opts:
-    path: /@Tech_Sonic
-    headers:
-      Host: free-server.techsonic.ggff.net
-  packet-encoding: ''
-- name: Cdnjs
-  server: cdnjs.com
-  port: 2095
-  client-fingerprint: randomized
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-- name: FBI
-  server: www.fbi.gov
-  port: 2095
-  client-fingerprint: randomized
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-- name: 🇺🇸 机场推荐:dafei.de 美国 14
-  type: vless
-  server: usrna.osaip.net
-  port: 15055
-  uuid: 50663374-b749-4acf-bacf-e00ec02928e3
-  udp: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: violet
-  tls: true
-  sni: usrna.osaip.net
-  skip-cert-verify: false
-- name: 🇩🇪_DE_德国
-  type: vless
-  server: f2.hamrahconf.ir
-  port: 8443
-  uuid: f85c9efa-da9d-4f86-a497-e92a89ffb572
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: p3-sync-06.secoxi.site
-  tls: true
-  sni: sp.secoxi.site
-  skip-cert-verify: false
-- name: 🇨🇱 智利1
-  type: hysteria2
-  server: starlink-ca.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 20000
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  udp: true
-- name: 🇨🇳_CN_中国
-  type: vmess
-  server: cn02.365cloud5878.com
-  port: 6029
-  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
-  alterId: 0
-  cipher: auto
-  udp: true
-- name: 🇯🇵 免费-日本2-Ver.8
-  server: yn714bn-g06.jp02-e3-vm0.entry.fr0528.art
-  port: 11778
-  type: vmess
-  uuid: 85de20b1-6241-3f2a-94bf-2af152278953
-  alterId: 1
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇯🇵 免费-日本6-Ver.8
-  server: yfz1vva-g06.jp06-jz-vm0.entry.fr0528.art
-  port: 28788
-  type: vmess
-  uuid: 85de20b1-6241-3f2a-94bf-2af152278953
-  alterId: 1
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  udp: true
-- name: 🇯🇵 免费-日本3-Ver.7
-  server: bnan4bn-g06.jp03-j7-vm0.entry.fr0528.art
-  port: 21586
-  type: vmess
-  uuid: 85de20b1-6241-3f2a-94bf-2af152278953
-  alterId: 1
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  udp: true
 - name: itarmy.com.ua
   server: itarmy.com.ua
   port: 2095
@@ -457,1249 +279,239 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-- name: 🇯🇵 日本2
+      Host: cnmfangbinxing.cnmfangbinxing-l.workers.dev
+- name: 🇨🇱 智利1
   type: hysteria2
-  server: starlink-jp2.mfa.cat
+  server: starlink-ca.mfa.cat
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 20443
-  sni: www.cloudflare.com
+  port: 20000
   skip-cert-verify: true
-  udp: true
-- name: 🇯🇵 免费-日本5-Ver.9
-  server: 59as4j6-g06.jp05-h6-vm0.entry.fr0528.art
-  port: 46487
-  type: vmess
-  uuid: 85de20b1-6241-3f2a-94bf-2af152278953
-  alterId: 1
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇯🇵 免费-日本7-Ver.2
-  server: 9d8dudj-g06.jp07-sh-vm0.entry.fr0528.art
-  port: 28788
-  type: vmess
-  uuid: 0628f524-c34d-3ab2-b361-016ed6eb5b66
-  alterId: 1
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇯🇵 免费-日本4-Ver.8
-  server: l4edm9s-g06.jp04-1d-vm0.entry.fr0528.art
-  port: 449
-  type: vmess
-  uuid: 0628f524-c34d-3ab2-b361-016ed6eb5b66
-  alterId: 1
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇯🇵 日本5
-  type: hysteria2
-  server: starlink-jp5.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 20443
   sni: www.cloudflare.com
-  skip-cert-verify: true
   udp: true
-- name: 🇯🇵 日本4
-  type: hysteria2
-  server: starlink-jp4.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 20443
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国
-  type: vmess
-  server: cn01.365cloud8754.com
-  port: 6001
-  uuid: db75bc92-4e32-48dd-b792-d7a8b707626c
-  alterId: 0
-  cipher: auto
-  udp: true
-- name: 东京 [ 1X ]  A
-  type: ss
-  server: a003.standard-nodes-chickenfarms.com
-  port: 53200
-  cipher: aes-256-gcm
-  password: 95c9ff2e-c881-4005-837c-c1e77ebac747
-  udp: true
-- name: 🇯🇵 日本3
-  type: hysteria2
-  server: starlink-jp3.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 20443
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵 机场推荐:dafei.de 日本 14
+- name: 🇺🇸_US_美国->🇯🇵_JP_日本
   type: vless
-  server: zdirectjp1.kobayx.art
-  port: 11446
-  uuid: 2234edf0-bd57-40dc-83ae-32ffa7eef8da
+  server: news.zoom.us
+  port: 8443
+  uuid: 39eb8c33-ee7f-4980-b3e5-684aaf390f56
+  network: ws
+  servername: darknet-free.alexid.org
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: darknet-free.alexid.org
+- name: 🇺🇸_US_美国->🇸🇬_SG_新加坡
+  type: vless
+  server: ev.zoom.us
+  port: 8443
+  uuid: 39eb8c33-ee7f-4980-b3e5-684aaf390f56
   udp: true
-- name: 🇯🇵 免费-日本2-Ver.8
-  server: 9484ydj-g06.jp02-e3-vm0.entry.fr0528.art
-  port: 11778
-  type: vmess
-  uuid: 0628f524-c34d-3ab2-b361-016ed6eb5b66
-  alterId: 1
-  cipher: auto
-  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: darknet-free.alexid.org
+  tls: true
+  sni: darknet-free.alexid.org
   skip-cert-verify: false
+- name: disney_netflix_GB
+  server: notability.com
+  type: vless
+  port: 2053
   udp: true
-- name: 🇪🇸 西班牙1
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  network: ws
+  tls: true
+  client-fingerprint: chrome
+  servername: vbxkgv81x.danfeng.qzz.io
+  ws-opts:
+    path: /danfeng?ed=2560
+    headers:
+      Host: vbxkgv81x.danfeng.qzz.io
+  packet-encoding: ''
+- name: 未知
+  type: ss
+  server: gia_us00.07c06051-81fd-4aa4-a94e-a0860315df8f.org
+  port: 14999
+  cipher: 2022-blake3-aes-256-gcm
+  password: mtMkp+1FttkSLmDOF9blnNMLigcCRacprQS3ry0nf3o=:AAvo+BsgpvvR5lJsdQU32vrMXL7ZAbZJZfETB7bddhQ=
+  udp: true
+- name: 🇭🇺 匈牙利2
+  type: trojan
+  server: z-eu2.mfa.cat
+  port: 10107
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇷🇺 俄罗斯2
+  type: trojan
+  server: z-eu2.mfa.cat
+  port: 10110
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇮🇸 冰岛1
   type: trojan
   server: z-eu1.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10033
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 台湾03
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8743
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 德国02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8796
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 法国02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8784
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 罗马尼亚01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8609
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 保加利亚02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8626
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 斯洛文尼亚01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8649
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 美国08
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8778
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 印度01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8785
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 美国01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8771
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 匈牙利01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8617
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 美国05
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8775
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 台湾动态ip（每5分钟自动更换ip）
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8739
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 韩国01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8601
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 🇪🇬 埃及2 家宽
-  type: trojan
-  server: z-eu2.mfa.cat
-  port: 10201
+  port: 10113
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: 葡萄牙01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8621
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 意大利02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8736
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 巴西02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8648
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 摩尔多瓦01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8607
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 美国02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8772
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 俄罗斯02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8638
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 马来西亚02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8606
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 斯洛伐克01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8633
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 巴西01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8647
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 比利时02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8738
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 澳大利亚02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8800
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 印度02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8790
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 西班牙02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8798
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 日本04
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8764
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 美国03
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8773
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 日本08
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8768
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 冰岛01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8611
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 德国01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8794
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 葡萄牙02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8622
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 台湾05
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8745
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 塞尔维亚02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8644
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 🇹🇼TW_2 | ⬇️ 3.0MB/s
-  type: ss
-  server: r3mrcg007147vhp.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 台湾01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8741
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 英国01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8786
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 立陶宛01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8635
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 土耳其02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8789
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 爱尔兰01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8639
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 斯洛文尼亚02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8650
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 加拿大01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8781
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 荷兰01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8791
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 拉脱维亚02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8654
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 比利时01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8737
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 罗马尼亚02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8610
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 日本3 bgp 1x
-  type: trojan
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  port: 55043
-  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
-  udp: true
-  sni: www.h3yun.com
-  skip-cert-verify: true
-- name: 希腊01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8733
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 希腊02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8734
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 新加坡4 bgp 1x
-  type: trojan
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  port: 55034
-  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
-  udp: true
-  sni: www.h3yun.com
-  skip-cert-verify: true
-- name: 瑞士01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8731
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 日本2 bgp 1x
-  type: trojan
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  port: 55042
-  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
-  udp: true
-  sni: www.h3yun.com
-  skip-cert-verify: true
-- name: 美国04
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8774
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 意大利01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8735
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 波兰02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8632
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 澳大利亚01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8799
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 马来西亚01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8605
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 西班牙01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8797
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 🇰🇷 机场推荐:dafei.de 韩国 02
-  type: vless
-  server: krp01.jumperservice.com
-  port: 19001
-  uuid: 455fc271-3ee2-493b-8c75-9324b4851e2f
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
-    short-id: ''
-  sni: addons.mozilla.org
-- name: 新加坡3 bgp 1x
-  type: trojan
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  port: 55033
-  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
-  udp: true
-  sni: www.h3yun.com
-  skip-cert-verify: true
-- name: 台湾08
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8748
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 哈萨克斯坦02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8642
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 新加坡10
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8730
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 美国3 bgp 1x
-  type: trojan
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  port: 55053
-  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
-  udp: true
-  sni: www.h3yun.com
-  skip-cert-verify: true
-- name: 以色列02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8646
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 摩尔多瓦02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8608
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 美国10
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8780
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 法国01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8783
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 波兰01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8631
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 日本05
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8765
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 🇲🇩 摩尔多瓦2
+- name: 🇵🇱 波兰2 家宽
   type: trojan
   server: z-eu2.mfa.cat
+  port: 10034
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇲🇩 摩尔多瓦1
+  type: trojan
+  server: z-eu1.mfa.cat
   port: 10105
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: 以色列01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8645
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 斯洛伐克02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8634
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 日本10
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8770
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 北马其顿01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8651
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 捷克02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8616
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 英国02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8787
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 韩国02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8602
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 哈萨克斯坦01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8641
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 俄罗斯01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8637
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 立陶宛02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8636
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 爱尔兰02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8640
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 匈牙利02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8618
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 芬兰01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8619
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 日本丨解GPT
-  type: ss
-  server: daxo.owwoedu.com
-  port: 38303
-  cipher: aes-128-gcm
-  password: a1c68fcf-ad91-494a-826c-065cecd51941
+- name: 🇺🇸 机场推荐:dafei.de 美国 11
+  server: us-sje.baipiao0721-dns78655.eu
+  port: 18443
+  type: anytls
+  password: 9a564888-cfcc-408f-b8bb-caed142cd2c6
   udp: true
-- name: 捷克01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8615
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 日本4 bgp 1x
-  type: trojan
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  port: 55044
-  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
-  udp: true
-  sni: www.h3yun.com
   skip-cert-verify: true
-- name: 土耳其01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8788
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 日本09
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8769
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 北马其顿02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8652
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 美国2 bgp 1x
-  type: trojan
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  port: 55052
-  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
+  sni: us-sje.baipiao0721-dns78655.eu
+- name: 加拿大-优化
+  type: vmess
+  server: planb.mojcn.com
+  port: 16641
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: www.h3yun.com
-  skip-cert-verify: true
-- name: 美国1 bgp 1x
-  type: trojan
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  port: 55051
-  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 台湾-优化
+  type: vmess
+  server: planb.mojcn.com
+  port: 16616
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: www.h3yun.com
-  skip-cert-verify: true
-- name: 日本1 bgp 1x
-  type: trojan
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  port: 55041
-  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 英国-优化2
+  type: vmess
+  server: m.cnmjin.net
+  port: 16645
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: www.h3yun.com
-  skip-cert-verify: true
-- name: 新加坡1 bgp 1x
-  type: trojan
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  port: 55031
-  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 台湾-优化3
+  type: vmess
+  server: t.cnmjcn.cyou
+  port: 16616
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: www.h3yun.com
-  skip-cert-verify: true
-- name: 台湾04
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8744
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 台湾06
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8746
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 🇧🇬 保加利亚2
-  type: trojan
-  server: z-eu2.mfa.cat
-  port: 10121
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  sni: www.cloudflare.com
-  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 德国-优化2
+  type: vmess
+  server: m.cnmjin.net
+  port: 16644
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 美国09
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8779
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 🇻🇳 越南2 IPLC 家宽
-  type: trojan
-  server: starlink-hks2.2513142.xyz
-  port: 21526
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  sni: www.cloudflare.com
-  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 台湾-优化2-GPT
+  type: vmess
+  server: m.cnmjin.net
+  port: 16616
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 加拿大02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8782
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 塞尔维亚01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8643
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 奥地利01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8655
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 保加利亚01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8625
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 美国07
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8777
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 日本02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8762
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 日本06
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8766
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 荷兰02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8793
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 奥地利02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8656
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 台湾4 bgp 1x
-  type: trojan
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  port: 55024
-  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
-  udp: true
-  sni: www.h3yun.com
-  skip-cert-verify: true
-- name: 日本07
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8767
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 美国06
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8776
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 新加坡解锁GPT
-  type: ss
-  server: daxo.owwoedu.com
-  port: 38310
-  cipher: aes-128-gcm
-  password: a1c68fcf-ad91-494a-826c-065cecd51941
-  udp: true
-- name: 台湾02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8742
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 🇨🇿 捷克1
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 🇵🇱 波兰1 家宽
   type: trojan
   server: z-eu1.mfa.cat
+  port: 10034
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇦 乌克兰1
+  type: trojan
+  server: z-eu1.mfa.cat
+  port: 10306
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇿 捷克2
+  type: trojan
+  server: z-eu2.mfa.cat
   port: 10108
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: 台湾丨解GPT
-  type: ss
-  server: daxo.owwoedu.com
-  port: 38308
-  cipher: aes-128-gcm
-  password: a1c68fcf-ad91-494a-826c-065cecd51941
-  udp: true
-- name: 冰岛02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8612
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 香港01丨【IEPL】
-  type: ss
-  server: daxo.owwoedu.com
-  port: 38302
-  cipher: aes-128-gcm
-  password: a1c68fcf-ad91-494a-826c-065cecd51941
-  udp: true
-- name: 美国 01【IEPL】
-  type: ss
-  server: daxo.owwoedu.com
-  port: 38305
-  cipher: aes-128-gcm
-  password: a1c68fcf-ad91-494a-826c-065cecd51941
+- name: 🇫🇮 芬兰2
+  type: trojan
+  server: z-eu2.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 10120
+  sni: www.cloudflare.com
+  skip-cert-verify: true
   udp: true
 - name: 🇩🇰 丹麦1
   type: trojan
@@ -1717,139 +529,6 @@ proxies:
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: 🇵🇹 葡萄牙2
-  type: trojan
-  server: z-eu2.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10119
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 日本03
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8763
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 🇨🇿 捷克2
-  type: trojan
-  server: z-eu2.mfa.cat
-  port: 10108
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇬🇧 英国2
-  type: trojan
-  server: z-eu2.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10015
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 美国4 bgp 1x
-  type: trojan
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  port: 55054
-  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
-  udp: true
-  sni: www.h3yun.com
-  skip-cert-verify: true
-- name: 🇬🇧 英国1
-  type: trojan
-  server: z-eu1.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10015
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇳🇱 荷兰2
-  type: trojan
-  server: z-eu2.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10116
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇦 乌克兰2
-  type: trojan
-  server: z-eu2.mfa.cat
-  port: 10306
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 新加坡2 bgp 1x
-  type: trojan
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  port: 55032
-  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
-  udp: true
-  sni: www.h3yun.com
-  skip-cert-verify: true
-- name: 🇭🇰 香港9 家宽
-  type: trojan
-  server: starlink-hks2.2513142.xyz
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 21520
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 芬兰02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8620
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 🇰🇭 柬埔寨2 IPLC 家宽
-  type: trojan
-  server: starlink-hks2.2513142.xyz
-  port: 21527
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 拉脱维亚01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8653
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 🇫🇮 芬兰2
-  type: trojan
-  server: z-eu2.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10120
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇮🇸 冰岛1
-  type: trojan
-  server: z-eu1.mfa.cat
-  port: 10113
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 德国丨解GPT
-  type: ss
-  server: daxo.owwoedu.com
-  port: 38314
-  cipher: aes-128-gcm
-  password: a1c68fcf-ad91-494a-826c-065cecd51941
-  udp: true
 - name: 🇭🇺 匈牙利1
   type: trojan
   server: z-eu1.mfa.cat
@@ -1858,107 +537,13 @@ proxies:
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: 瑞士02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8732
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 🇫🇷 法国2
+- name: 🇲🇩 摩尔多瓦2
   type: trojan
   server: z-eu2.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10123
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙2
-  type: trojan
-  server: z-eu2.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10033
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 剩余流量：0
-  type: ss
-  server: daxo.owwoedu.com
-  port: 38301
-  cipher: aes-128-gcm
-  password: a1c68fcf-ad91-494a-826c-065cecd51941
-  udp: true
-- name: 🇻🇳 越南1 IPLC 家宽
-  type: trojan
-  server: starlink-hks1.2513142.xyz
-  port: 21526
+  port: 10105
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
   sni: www.cloudflare.com
   skip-cert-verify: true
-  udp: true
-- name: 🇨🇳 台湾4 家宽
-  type: hysteria2
-  server: starlink-tw4.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 20115
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇵🇭 菲律宾1 IPLC
-  type: trojan
-  server: starlink-hks1.2513142.xyz
-  port: 21525
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇵🇭 菲律宾2 IPLC
-  type: trojan
-  server: starlink-hks2.2513142.xyz
-  port: 21525
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: Relay_🇨🇳CN-🇳🇱NL_127 | 3.65Mb
-  server: v30.hdacd.com
-  type: vmess
-  country: 🇨🇳CN
-  port: 30830
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 0
-  cipher: auto
-  network: tcp
-  servername: v30.hdacd.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 日本01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8761
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 🇦🇺 澳大利亚2
-  type: trojan
-  server: starlink-au.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 44443
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: ' - [直连-香港-动态家宽] ✨ 1x'
-  type: ss
-  server: hk-nat-toys-ddns.337979.xyz
-  port: 20415
-  cipher: aes-256-gcm
-  password: 2RGZ3DHE9cNSLkzr
   udp: true
 - name: 🇳🇬 尼日利亚1
   type: trojan
@@ -1968,112 +553,66 @@ proxies:
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳 台湾8 家宽
-  type: trojan
-  server: starlink-tw2.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 20110
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇵🇱 波兰1 家宽
+- name: 🇷🇺 俄罗斯1
   type: trojan
   server: z-eu1.mfa.cat
-  port: 10034
+  port: 10110
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳 台湾7 家宽
+- name: 🇪🇬 埃及1 家宽
   type: trojan
-  server: starlink-tw1.mfa.cat
+  server: z-eu1.mfa.cat
+  port: 10201
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 12410
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: 🇨🇭 瑞士2
+- name: 🇧🇬 保加利亚2
   type: trojan
-  server: starlink-ch.mfa.cat
-  port: 22443
+  server: z-eu2.mfa.cat
+  port: 10121
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: Relay_🏁 ZZ | 4.71Mb
-  server: v6.hdacd.com
-  type: vmess
-  country: 🏁 ZZ
-  port: 30806
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  network: tcp
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 英国-优化3
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16645
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-  ws-path: /
-  ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: 🇰🇭 柬埔寨1 IPLC 家宽
+- name: 🇱🇹 立陶宛1
   type: trojan
-  server: starlink-hks1.2513142.xyz
-  port: 21527
+  server: z-eu1.mfa.cat
+  port: 10111
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳 台湾9 家宽
+- name: 🇳🇴 挪威2
   type: trojan
-  server: starlink-tw3.mfa.cat
+  server: z-eu2.mfa.cat
+  port: 10112
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 12409
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳 台湾3 家宽
-  type: hysteria2
-  server: starlink-tw3.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 12403
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: disney_netflix_GB |248.01Mb
-  server: uk1.fromblancwithlove.com
-  type: vless
-  port: 8443
-  udp: true
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-  tls: true
-  skip-cert-verify: true
-  packet-encoding: ''
-- name: 🇭🇰 香港3 IPLC
-  type: trojan
-  server: starlink-hks3.2513142.xyz
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 21523
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇳🇱 荷兰1
+- name: 🇸🇰 斯洛伐克1
   type: trojan
   server: z-eu1.mfa.cat
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10116
+  port: 10127
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰1
+  type: trojan
+  server: z-eu1.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 10120
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇿 捷克1
+  type: trojan
+  server: z-eu1.mfa.cat
+  port: 10108
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
@@ -2085,33 +624,18 @@ proxies:
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: 🇮🇹 意大利2
+- name: 🇸🇪 瑞典1
+  type: trojan
+  server: z-eu1.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 10018
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇮🇸 冰岛2
   type: trojan
   server: z-eu2.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10117
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇦 乌克兰1
-  type: trojan
-  server: z-eu1.mfa.cat
-  port: 10306
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇩🇪 德国5
-  type: trojan
-  server: z-eu1.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10124
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-- name: 🇪🇬 埃及1 家宽
-  type: trojan
-  server: z-eu1.mfa.cat
-  port: 10201
+  port: 10113
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
   sni: www.cloudflare.com
   skip-cert-verify: true
@@ -2124,11 +648,194 @@ proxies:
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰 香港1 IPLC
+- name: 🇸🇰 斯洛伐克2
   type: trojan
-  server: starlink-hks1.2513142.xyz
+  server: z-eu2.mfa.cat
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 21521
+  port: 10127
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+- name: 加拿大-优化2
+  type: vmess
+  server: m.cnmjin.net
+  port: 16641
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 🇱🇹 立陶宛2
+  type: trojan
+  server: z-eu2.mfa.cat
+  port: 10111
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 英国-优化-GPT
+  type: vmess
+  server: planb.mojcn.com
+  port: 16645
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 美国LA-优化-GPT
+  type: vmess
+  server: planb.mojcn.com
+  port: 16648
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 🇳🇱 荷兰2
+  type: trojan
+  server: z-eu2.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 10116
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 美国LA-优化3-GPT
+  type: vmess
+  server: t.cnmjcn.cyou
+  port: 16648
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 🇪🇬 埃及2 家宽
+  type: trojan
+  server: z-eu2.mfa.cat
+  port: 10201
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 加拿大-优化3
+  type: vmess
+  server: t.cnmjcn.cyou
+  port: 16641
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 🇺🇦 乌克兰2
+  type: trojan
+  server: z-eu2.mfa.cat
+  port: 10306
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 美国LA-优化2-GPT
+  type: vmess
+  server: m.cnmjin.net
+  port: 16648
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 印度-优化
+  type: vmess
+  server: planb.mojcn.com
+  port: 16626
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 🇳🇱 荷兰1
+  type: trojan
+  server: z-eu1.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 10116
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 英国-优化3
+  type: vmess
+  server: t.cnmjcn.cyou
+  port: 16645
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: ⚠️ 当前套餐已到期或超量
+  type: hysteria2
+  server: starlink-us2.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 25131
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  udp: true
+- name: 🇪🇸 西班牙2
+  type: trojan
+  server: z-eu2.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 10033
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
@@ -2140,26 +847,11 @@ proxies:
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: 🇮🇸 冰岛2
-  type: trojan
-  server: z-eu2.mfa.cat
-  port: 10113
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国
-  type: ss
-  server: r3mrcg00129437x.cybervena.com
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 美国LA-优化-GPT
+- name: 德国-优化
   type: vmess
   server: planb.mojcn.com
-  port: 16648
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
+  port: 16644
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
   alterId: 0
   cipher: auto
   udp: true
@@ -2167,39 +859,32 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
   ws-path: /
   ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: 🇷🇺 俄罗斯1
-  type: trojan
-  server: z-eu1.mfa.cat
-  port: 10110
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇰 香港7 家宽
-  type: trojan
-  server: starlink-hkt1.2513142.xyz
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 21520
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 橘子电报频道@juzibaipiao_84
-  type: hysteria2
-  server: hk01.poke-mon.xyz
-  port: 20000
-  password: e04dec7c-6dee-4c9d-a708-271f25ab9bea
-  udp: true
-  sni: www.apple.com
-  skip-cert-verify: true
-- name: 🇳🇴 挪威2
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 🇵🇹 葡萄牙2
   type: trojan
   server: z-eu2.mfa.cat
-  port: 10112
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 10119
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: vmess
+  server: cn02.365cloud5878.com
+  port: 6044
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: 🇮🇹 意大利2
+  type: trojan
+  server: z-eu2.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 10117
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
@@ -2211,22 +896,36 @@ proxies:
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: 🇫🇮 芬兰1
+- name: 🇪🇸 西班牙1
   type: trojan
   server: z-eu1.mfa.cat
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10120
+  port: 10033
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰 香港2 IPLC
+- name: 🇬🇧 英国2
   type: trojan
-  server: starlink-hks2.2513142.xyz
+  server: z-eu2.mfa.cat
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 21522
+  port: 10015
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
+- name: Udemy
+  server: www.udemy.com
+  port: 2095
+  client-fingerprint: randomized
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-l.workers.dev
 - name: 🇮🇪 爱尔兰2
   type: trojan
   server: z-eu2.mfa.cat
@@ -2235,105 +934,20 @@ proxies:
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: 🇸🇪 瑞典1
-  type: trojan
-  server: z-eu1.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10018
-  sni: www.cloudflare.com
-  skip-cert-verify: true
+- name: 洛杉矶 [ 1X ]  A
+  type: ss
+  server: a009.standard-nodes-chickenfarms.com
+  port: 50000
+  cipher: aes-256-gcm
+  password: 95c9ff2e-c881-4005-837c-c1e77ebac747
   udp: true
-- name: Relay_🇭🇰 HK | 2.64Mb
-  server: v8.hdacd.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 30808
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  network: tcp
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇫🇷 法国1
+- name: 🇫🇷 法国2
   type: trojan
-  server: z-eu1.mfa.cat
+  server: z-eu2.mfa.cat
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
   port: 10123
   sni: www.cloudflare.com
   skip-cert-verify: true
-- name: 德国-优化
-  type: vmess
-  server: planb.mojcn.com
-  port: 16644
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-  ws-path: /
-  ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: 🇵🇱 波兰2 家宽
-  type: trojan
-  server: z-eu2.mfa.cat
-  port: 10034
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇸🇰 斯洛伐克2
-  type: trojan
-  server: z-eu2.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10127
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-- name: 🇱🇹 立陶宛2
-  type: trojan
-  server: z-eu2.mfa.cat
-  port: 10111
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵 机场推荐:dafei.de 日本 07
-  type: hysteria2
-  server: jp-hy2.onetaplink.app
-  port: 5443
-  password: 48b36b6a-eaa6-4843-9231-0bb8b38b5da5
-  udp: true
-  sni: hy2-jp.onetaplink.app
-  obfs: salamander
-  skip-cert-verify: false
-- name: 英国-优化-GPT
-  type: vmess
-  server: planb.mojcn.com
-  port: 16645
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-  ws-path: /
-  ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: 🇲🇩 摩尔多瓦1
-  type: trojan
-  server: z-eu1.mfa.cat
-  port: 10105
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
 - name: 🇮🇪 爱尔兰1
   type: trojan
   server: z-eu1.mfa.cat
@@ -2342,74 +956,13 @@ proxies:
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: 🇷🇺 俄罗斯2
-  type: trojan
-  server: z-eu2.mfa.cat
-  port: 10110
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇭🇺 匈牙利2
-  type: trojan
-  server: z-eu2.mfa.cat
-  port: 10107
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇷🇴_RO_罗马尼亚
-  type: vless
-  server: ma-1.vpnd.io
-  port: 12574
-  uuid: 17cdeaa0-d9f0-443d-8f14-80cef1de5529
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  sni: amazon.com
-  skip-cert-verify: false
-- name: 备用临时香港，X4
-  type: ss
-  server: xxww.owwoedu.com
-  port: 38302
-  cipher: aes-128-gcm
-  password: a1c68fcf-ad91-494a-826c-065cecd51941
-  udp: true
-- name: 备用临时新加坡，X4
-  type: ss
-  server: xxww.owwoedu.com
-  port: 38310
-  cipher: aes-128-gcm
-  password: a1c68fcf-ad91-494a-826c-065cecd51941
-  udp: true
-- name: 剩余流量：426.43 GB
-  type: ss
-  server: a001.standard-nodes-chickenfarms.com
-  port: 50000
-  cipher: aes-256-gcm
-  password: 95c9ff2e-c881-4005-837c-c1e77ebac747
-  udp: true
-- name: 🇸🇰 斯洛伐克1
+- name: 🇬🇧 英国1
   type: trojan
   server: z-eu1.mfa.cat
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10127
+  port: 10015
   sni: www.cloudflare.com
   skip-cert-verify: true
-- name: 🇱🇹 立陶宛1
-  type: trojan
-  server: z-eu1.mfa.cat
-  port: 10111
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 备用临时日本，X4
-  type: ss
-  server: xxww.owwoedu.com
-  port: 38303
-  cipher: aes-128-gcm
-  password: a1c68fcf-ad91-494a-826c-065cecd51941
   udp: true
 - name: 🇩🇪 德国6
   type: trojan
@@ -2418,90 +971,49 @@ proxies:
   port: 10125
   sni: www.cloudflare.com
   skip-cert-verify: true
-- name: 备用临时台湾，X4
-  type: ss
-  server: xxww.owwoedu.com
-  port: 38308
-  cipher: aes-128-gcm
-  password: a1c68fcf-ad91-494a-826c-065cecd51941
-  udp: true
-- name: 加拿大-优化
-  type: vmess
-  server: planb.mojcn.com
-  port: 16641
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-  ws-path: /
-  ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: 🇦🇪 阿联酋2
-  type: trojan
-  server: z-sg2.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10012
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇦🇶 南极洲1 IPLC
-  type: trojan
-  server: z-sg1.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10109
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  udp: true
-- name: 🇸🇦 沙特阿拉伯1
-  type: trojan
-  server: z-sg1.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10212
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇯🇵 机场推荐:dafei.de 日本 22
+- name: whatismyip
+  server: www.whatismyip.net
+  port: 2095
+  client-fingerprint: randomized
   type: vless
-  server: jp.iij.sakura.baipiao0721-dns78655.eu
-  port: 8443
-  uuid: 9d696742-4e6d-4dd5-975d-c6c52ea54edc
-  udp: true
-- name: 🇺🇸_US_美国
-  type: vless
-  server: proxy.rahmancloud.ir
-  port: 8443
-  uuid: 6b279ab4-10e8-4e66-fb5d-9092c6709a1e
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proxy.rahmancloud.ir
-  tls: true
-  skip-cert-verify: false
-- name: 🇯🇵 免费-日本5-Ver.9
-  server: l48dmds-g06.jp05-h6-vm0.entry.fr0528.art
-  port: 46487
-  type: vmess
-  uuid: 0628f524-c34d-3ab2-b361-016ed6eb5b66
-  alterId: 1
-  cipher: auto
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   tls: false
+  tfo: false
   skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-l.workers.dev
+- name: 🇩🇪 德国5
+  type: trojan
+  server: z-eu1.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 10124
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国1
+  type: trojan
+  server: z-eu1.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 10123
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士2
+  type: trojan
+  server: starlink-ch.mfa.cat
+  port: 22443
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  sni: www.cloudflare.com
+  skip-cert-verify: true
   udp: true
-- name: 🇭🇰 机场推荐:dafei.de 香港 11
-  server: 23e67196-td8hs0-txfm0f-1qxa1.hkt.cdnhuawei.com
-  port: 8443
-  type: http
-  username: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
-  password: <password>
-  tls: true
-  sni: 23e67196-td8hs0-txfm0f-1qxa1.hkt.cdnhuawei.com
+- name: ' - [国际入口-尼日利亚] ✨ 5x'
+  type: ss
+  server: natng2.bytevirt.net
+  port: 30909
+  cipher: aes-256-gcm
+  password: 2RGZ3DHE9cNSLkzr
+  udp: true
 - name: 🇺🇸_US_美国->🇩🇪_DE_德国
   type: vless
   server: fra01.jumperservice.com
@@ -2512,70 +1024,56 @@ proxies:
   tls: true
   sni: www.speedtest.net
   skip-cert-verify: false
-- name: 🇭🇰 机场推荐:dafei.de 香港 08
-  server: o0oo0o0h3.kobayx.art
-  port: 11451
-  type: anytls
-  password: 2234edf0-bd57-40dc-83ae-32ffa7eef8da
+- name: 🇬🇧 英国 01
+  type: vless
+  server: uk1.fromblancwithlove.com
+  port: 8443
+  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
   udp: true
-  skip-cert-verify: true
-  sni: o0oo0o0h3.kobayx.art
-- name: 🇭🇰香港 | 低倍率丨0.5x
-  type: trojan
-  server: hkf.fzvip.cc
-  port: 38050
-  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
-  udp: true
-  sni: www.icloud.com
-  skip-cert-verify: true
-- name: 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+  tls: true
+  skip-cert-verify: false
+- name: 🇨🇳_CN_中国
   type: vmess
-  server: v45.hdacd.com
-  port: 30845
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  udp: true
-- name: 🇸🇬 SG新加坡-01
-  type: vmess
-  server: gtm1.ktmwan.net
-  port: 12901
-  uuid: bbd785de-9793-4453-be40-6a3fdc418203
+  server: pub.ap20260228.com
+  port: 64014
+  uuid: a739e782-1682-38a5-9153-aad09d779ae9
   alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: baidu.com
-  ws-path: /
-  ws-headers:
-    Host: baidu.com
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  type: vmess
-  server: v9.hdacd.com
-  port: 30809
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
   cipher: auto
   tls: false
   skip-cert-verify: false
-- name: Relay_-🇸🇬SG_37 |21.26Mb
-  server: node1.nanonet.host
+- name: 🇨🇳_CN_中国_1
+  type: vmess
+  server: pub.ap20260228.com
+  port: 64018
+  uuid: a739e782-1682-38a5-9153-aad09d779ae9
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: 🇩🇪 机场推荐:dafei.de 德国 08
   type: vless
-  port: 22539
+  server: cdn.7zz.cn
+  port: 2086
+  uuid: 73829173-bb56-442b-a8d4-ec732c020945
   udp: true
-  uuid: d6d7e024-0a49-483d-bcd7-048c4d30eca6
-  network: tcp
+  network: httpupgrade
+- name: 🇺🇸_US_美国->🏳️_unKnow_未知
+  type: vless
+  server: 8tf3qy.by-api-yandex.com
+  port: 10121
+  uuid: d1209ffb-c159-48d5-b40d-542ce11fc768
+  servername: apple.com
   tls: true
-  servername: node1.nanonet.host
-  packet-encoding: ''
-- name: 加拿大-优化3
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 4DdA8dBVn5zB_UTbgBY45YqM0HU8zrjXYdzg3-wz5Rg
+    short-id: 9c2a7d4e5f18b6a3
+- name: 香港WAP-优化3-Gemini
   type: vmess
   server: t.cnmjcn.cyou
-  port: 16641
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
+  port: 16622
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
   alterId: 0
   cipher: auto
   udp: true
@@ -2583,125 +1081,20 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
   ws-path: /
   ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: ' - [国际入口-尼日利亚] ✨ 5x'
-  type: ss
-  server: natng2.bytevirt.net
-  port: 30909
-  cipher: aes-256-gcm
-  password: 2RGZ3DHE9cNSLkzr
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 🇨🇿_CZ_捷克->🇷🇺_RU_俄罗斯
+  type: vless
+  server: desta.axinode.sbs
+  port: 10965
+  uuid: d1209ffb-c159-48d5-b40d-542ce11fc768
   udp: true
-- name: 🇧🇩 孟加拉国1
-  type: trojan
-  server: z-sg1.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10010
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: Relay_🇭🇰 HK |45.05Mb
-  server: v4.hdacd.com
-  type: vmess
-  country: 🇭🇰 HK
-  port: 30804
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  network: tcp
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: 🇧🇭 巴林1
-  type: trojan
-  server: z-sg1.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10112
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  type: vmess
-  server: v29.hdacd.com
-  port: 30829
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
+  flow: xtls-rprx-vision
+  tls: true
+  sni: deepl.com
   skip-cert-verify: false
-- name: 🇦🇷 阿根廷2
-  type: trojan
-  server: starlink-br.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 33333
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  udp: true
-- name: 🇮🇳 印度1
-  type: trojan
-  server: z-sg1.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10106
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇬🇧 UK英国-01
-  type: vmess
-  server: gtm1.ktmwan.net
-  port: 12886
-  uuid: bbd785de-9793-4453-be40-6a3fdc418203
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: baidu.com
-  ws-path: /
-  ws-headers:
-    Host: baidu.com
-- name: 🇵🇰 巴基斯坦1
-  type: trojan
-  server: z-sg1.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10011
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  udp: true
-- name: Relay_🇨🇳 CN-🇺🇸US_125 | 3.31Mb
-  server: v46.hdacd.com
-  type: vmess
-  country: 🇨🇳 CN
-  port: 30846
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  network: tcp
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: Relay_🇮🇷IR |19.52Mb
-  server: v36.hdacd.com
-  type: vmess
-  country: 🇮🇷IR
-  port: 30836
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  network: tcp
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-- name: ' - [国际入口-马来西亚] ✨ 5x'
-  type: ss
-  server: malaysia-bytevirt.337979.xyz
-  port: 33304
-  cipher: aes-256-gcm
-  password: 2RGZ3DHE9cNSLkzr
-  udp: true
 - name: 🇦🇷 阿根廷1
   type: hysteria2
   server: starlink-br.mfa.cat
@@ -2710,111 +1103,6 @@ proxies:
   skip-cert-verify: true
   sni: www.cloudflare.com
   udp: true
-- name: 🇲🇴澳门｜05｜BGP
-  type: vmess
-  server: cfu.456815.xyz
-  port: 2096
-  uuid: fe0fda62-79ff-467e-bef4-983322c1d21b
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: false
-  servername: ll.456815.xyz
-  network: ws
-  ws-opts:
-    path: /sdfsf
-    headers:
-      Host: ll.456815.xyz
-- name: 🇲🇴 澳门1
-  type: trojan
-  server: z-sg1.mfa.cat
-  port: 10008
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 美国LA-优化3-GPT
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16648
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-  ws-path: /
-  ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: 新加坡 [ 1X ] A
-  type: ss
-  server: a005.standard-nodes-chickenfarms.com
-  port: 50000
-  cipher: aes-256-gcm
-  password: 95c9ff2e-c881-4005-837c-c1e77ebac747
-  udp: true
-- name: 🇰🇷韩国 | 低倍率丨0.4x
-  type: trojan
-  server: krf.fzvip.cc
-  port: 38500
-  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
-  udp: true
-  sni: www.icloud.com
-  skip-cert-verify: true
-- alterId: 2
-  cipher: auto
-  name: Hong Kong_Wong Tai Sin_vmess_102
-  port: 30807
-  server: v10.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇧🇷 巴西2
-  type: trojan
-  server: starlink-br.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 22222
-  skip-cert-verify: true
-  sni: www.cloudflare.com
-  udp: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  type: vmess
-  server: v35.hdacd.com
-  port: 30835
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  udp: true
-- name: 🇮🇷_IR_伊朗->🇺🇸_US_美国
-  type: vmess
-  server: v24.hdacd.com
-  port: 30824
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-- name: 台湾-优化
-  type: vmess
-  server: planb.mojcn.com
-  port: 16616
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-  ws-path: /
-  ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
 - name: 🇸🇦_SA_沙特阿拉伯->🏳️_unKnow_未知
   type: vless
   server: sub.himikvpn.online
@@ -2825,59 +1113,53 @@ proxies:
   tls: true
   sni: pimg.mycdn.me
   skip-cert-verify: false
-- name: 🇹🇭 泰国2
+- name: 日本1 iepl 1.5x
   type: trojan
-  server: starlink-th.mfa.cat
+  server: c80c993c-e6d4-548c-88c0-c4893b3d3d4d.358.onl
+  port: 55041
+  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
+  udp: true
+  sni: www.h3yun.com
+  skip-cert-verify: true
+- name: 新加坡2 iepl 1.5x
+  type: trojan
+  server: c80c993c-e6d4-548c-88c0-c4893b3d3d4d.358.onl
+  port: 55032
+  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
+  udp: true
+  sni: www.h3yun.com
+  skip-cert-verify: true
+- name: 🇦🇷 阿根廷2
+  type: trojan
+  server: starlink-br.mfa.cat
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 44443
+  port: 33333
+  skip-cert-verify: true
   sni: www.cloudflare.com
-  skip-cert-verify: true
   udp: true
-- name: 🇳🇱_NL_荷兰
-  type: anytls
-  server: mf-th.sw8.pw
-  port: 20001
-  password: 93e3b6b8-209f-487a-b977-3bd50b94953a
-  sni: 127.0.0.1
-  skip-cert-verify: true
-  tls: false
-  udp: true
-- name: 🇮🇶 伊拉克1
-  type: hysteria2
-  server: starlink-il.mfa.cat
+- name: 🇧🇷 巴西2
+  type: trojan
+  server: starlink-br.mfa.cat
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 20000
+  port: 22222
   skip-cert-verify: true
   sni: www.cloudflare.com
   udp: true
-- name: 🇭🇰 机场推荐:dafei.de 香港 05
-  type: vless
-  server: cc6b4011-td8hs0-ten5li-mv7m.hkt2.cdnhuawei.com
-  port: 8443
-  uuid: 94d40708-8273-11ea-8fc9-f23c913c8d2b
+- name: 台湾1 iepl 1.5x
+  type: trojan
+  server: c80c993c-e6d4-548c-88c0-c4893b3d3d4d.358.onl
+  port: 55021
+  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
   udp: true
-- name: 印度-优化
+  sni: www.h3yun.com
+  skip-cert-verify: true
+- name: 🇨🇳_CN_中国->🇮🇷_IR_伊朗
   type: vmess
-  server: planb.mojcn.com
-  port: 16626
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
+  server: cn01.365cloud8754.com
+  port: 6001
+  uuid: db75bc92-4e32-48dd-b792-d7a8b707626c
   alterId: 0
   cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-  ws-path: /
-  ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: 🇮🇩 机场推荐:dafei.de 印尼 02
-  type: ss
-  server: idxva.osaip.net
-  port: 33333
-  cipher: 2022-blake3-aes-256-gcm
-  password: MTQ3NDRiNGVhMGEyNDMyZGVmMGZiOWMzMGE0ODJmZTQ%3D%3ANTA2NjMzNzQtYjc0OS00YWNmLWJhY2YtZTAwZWMwMjk%3D
   udp: true
 - name: 🇩🇪德国｜05｜AWS
   type: hysteria2
@@ -2887,6 +1169,24 @@ proxies:
   udp: true
   sni: de.ccwink.cc
   skip-cert-verify: true
+- name: 🇯🇵 免费-日本6-Ver.8
+  server: ldn4u9j-g06.jp06-jz-vm0.entry.fr0528.art
+  port: 28788
+  type: vmess
+  uuid: 0628f524-c34d-3ab2-b361-016ed6eb5b66
+  alterId: 1
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+- name: 🇮🇶 伊拉克1
+  type: hysteria2
+  server: starlink-il.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 20000
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  udp: true
 - name: 🇲🇴澳门｜04｜AWS
   type: hysteria2
   server: hkaws.ccwink.photos
@@ -2895,63 +1195,6 @@ proxies:
   udp: true
   sni: moak.ccwink.cc
   skip-cert-verify: true
-- name: 香港-优化-Gemini
-  type: vmess
-  server: planb.mojcn.com
-  port: 16632
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-  ws-path: /
-  ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  type: vmess
-  server: v33.hdacd.com
-  port: 30833
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-- name: 香港WAP-优化-Gemini
-  type: vmess
-  server: planb.mojcn.com
-  port: 16622
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-  ws-path: /
-  ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: 台湾-优化3
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16616
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-  ws-path: /
-  ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
 - name: 🇺🇸_US_美国->🇨🇭_CH_瑞士
   type: vless
   server: s1.eldoradu.ir
@@ -2965,35 +1208,14 @@ proxies:
     path: /
     headers:
       Host: fz3.sellink.ir
-- name: 🇩🇪_DE_德国
-  type: vless
-  server: F2.HaMrAhCoNf.Ir
+- name: 🇯🇵 机场推荐:dafei.de 日本 19
+  server: jp.iij.sakura.baipiao0721-dns78655.eu
   port: 8443
-  uuid: f85c9efa-da9d-4f86-a497-e92a89ffb572
-  network: ws
-  servername: sp.secoxi.site
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: p3-sync-06.secoxi.site
-- name: 🇺🇸 机场推荐:dafei.de 美国 09
-  server: hous.kobayx.art
-  port: 11454
   type: anytls
-  password: 2234edf0-bd57-40dc-83ae-32ffa7eef8da
+  password: 9a564888-cfcc-408f-b8bb-caed142cd2c6
   udp: true
   skip-cert-verify: true
-  sni: hous.kobayx.art
-- name: 🇺🇸美国丨低倍率丨0.4x
-  type: trojan
-  server: usf.fzvip.cc
-  port: 39000
-  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
-  udp: true
-  sni: www.icloud.com
-  skip-cert-verify: true
+  sni: jp.iij.sakura.baipiao0721-dns78655.eu
 - name: 🇳🇱_NL_荷兰->🇺🇸_US_美国
   type: vless
   server: kz-5.vpnd.io
@@ -3019,23 +1241,124 @@ proxies:
     headers:
       Host: vbxkgv81x.danfeng.qzz.io
   packet-encoding: ''
-- name: 🇺🇸_US_美国->🏳️_unKnow_未知
+- name: 东京 [ 1X ]  A
+  type: ss
+  server: a003.standard-nodes-chickenfarms.com
+  port: 53200
+  cipher: aes-256-gcm
+  password: 95c9ff2e-c881-4005-837c-c1e77ebac747
+  udp: true
+- name: 香港WAP-优化-Gemini
+  type: vmess
+  server: planb.mojcn.com
+  port: 16622
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 日本3 bgp 1x
+  type: trojan
+  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
+  port: 55043
+  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
+  udp: true
+  sni: www.h3yun.com
+  skip-cert-verify: true
+- name: 美国3 bgp 1x
+  type: trojan
+  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
+  port: 55053
+  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
+  udp: true
+  sni: www.h3yun.com
+  skip-cert-verify: true
+- name: 香港-优化-Gemini
+  type: vmess
+  server: planb.mojcn.com
+  port: 16632
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 🇩🇪_DE_德国
   type: vless
-  server: 8tf3qy.by-api-yandex.com
-  port: 10121
-  uuid: d1209ffb-c159-48d5-b40d-542ce11fc768
-  servername: apple.com
+  server: F2.HaMrAhCoNf.Ir
+  port: 8443
+  uuid: f85c9efa-da9d-4f86-a497-e92a89ffb572
+  network: ws
+  servername: sp.secoxi.site
   tls: true
-  flow: xtls-rprx-vision
   client-fingerprint: chrome
-  reality-opts:
-    public-key: 4DdA8dBVn5zB_UTbgBY45YqM0HU8zrjXYdzg3-wz5Rg
-    short-id: 9c2a7d4e5f18b6a3
+  ws-opts:
+    path: /
+    headers:
+      Host: p3-sync-06.secoxi.site
+- name: 美国4 bgp 1x
+  type: trojan
+  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
+  port: 55054
+  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
+  udp: true
+  sni: www.h3yun.com
+  skip-cert-verify: true
+- name: 🇺🇸_US_美国
+  type: vless
+  server: proxy.rahmancloud.ir
+  port: 8443
+  uuid: 6b279ab4-10e8-4e66-fb5d-9092c6709a1e
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: proxy.rahmancloud.ir
+  tls: true
+  skip-cert-verify: false
+- name: 日本2 bgp 1x
+  type: trojan
+  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
+  port: 55042
+  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
+  udp: true
+  sni: www.h3yun.com
+  skip-cert-verify: true
+- name: 美国2 bgp 1x
+  type: trojan
+  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
+  port: 55052
+  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
+  udp: true
+  sni: www.h3yun.com
+  skip-cert-verify: true
+- name: 🇨🇳_CN_中国
+  type: vmess
+  server: cn02.365cloud5878.com
+  port: 6029
+  uuid: 9f1ecfca-13a9-488d-ac84-aaeb73a8d574
+  alterId: 0
+  cipher: auto
+  udp: true
 - name: 新加坡-优化-Gemini-GPT
   type: vmess
   server: planb.mojcn.com
   port: 16618
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
   alterId: 0
   cipher: auto
   udp: true
@@ -3043,166 +1366,68 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
   ws-path: /
   ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: 剩余流量：-2.16 GB
-  type: vmess
-  server: planb.mojcn.com
-  port: 16617
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
-  alterId: 0
-  cipher: auto
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 比利时01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8737
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 斯洛文尼亚01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8649
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 日本4 bgp 1x
+  type: trojan
+  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
+  port: 55044
+  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
   udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-  ws-path: /
-  ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: 🇯🇵 免费-日本6-Ver.8
-  server: 2d8d99j-g06.jp06-jz-vm0.entry.fr0528.art
-  port: 28788
-  type: vmess
-  uuid: 0628f524-c34d-3ab2-b361-016ed6eb5b66
-  alterId: 1
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
+  sni: www.h3yun.com
+  skip-cert-verify: true
+- name: 美国1 bgp 1x
+  type: trojan
+  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
+  port: 55051
+  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
   udp: true
-- name: 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-  type: vmess
-  server: v12.hdacd.com
-  port: 30812
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 0
-  cipher: auto
+  sni: www.h3yun.com
+  skip-cert-verify: true
+- name: 香港14
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8714
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 日本1 bgp 1x
+  type: trojan
+  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
+  port: 55041
+  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
   udp: true
-- name: 🇺🇸 机场推荐:dafei.de 美国 12
-  server: 1ec25151-td8hs0-txfm0f-1qxa1.cu.oshuawei.com
-  port: 15229
-  type: http
-  username: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
-  password: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
-  tls: true
-  sni: 1ec25151-td8hs0-txfm0f-1qxa1.cu.oshuawei.com
-- name: 台湾10
+  sni: www.h3yun.com
+  skip-cert-verify: true
+- name: 台湾04
   type: ss
   server: efan9863.dns8656815.com
-  port: 8750
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 新加坡07
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8727
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 台湾07
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8747
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 新加坡02
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8722
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 新加坡06
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8726
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 新加坡04
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8724
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 香港13
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8713
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 新加坡03
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8723
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 香港12
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8712
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 新加坡01
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8721
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 香港16
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8716
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 新加坡09
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8729
+  port: 8744
   cipher: rc4-md5
   password: efanccyun
   plugin: obfs
@@ -3229,50 +1454,60 @@ proxies:
   plugin-opts:
     mode: http
     host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 新加坡05
+- name: 斯洛伐克01
   type: ss
   server: efan9863.dns8656815.com
-  port: 8725
+  port: 8633
   cipher: rc4-md5
   password: efanccyun
   plugin: obfs
   plugin-opts:
     mode: http
     host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 香港04
+- name: 新加坡10
   type: ss
   server: efan9863.dns8656815.com
-  port: 8754
+  port: 8730
   cipher: rc4-md5
   password: efanccyun
   plugin: obfs
   plugin-opts:
     mode: http
     host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 香港09-备用域名：饿饭.cc
+- name: 美国01
   type: ss
   server: efan9863.dns8656815.com
-  port: 8759
+  port: 8771
   cipher: rc4-md5
   password: efanccyun
   plugin: obfs
   plugin-opts:
     mode: http
     host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 香港18
+- name: 捷克01
   type: ss
   server: efan9863.dns8656815.com
-  port: 8718
+  port: 8615
   cipher: rc4-md5
   password: efanccyun
   plugin: obfs
   plugin-opts:
     mode: http
     host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 香港19
+- name: 奥地利01
   type: ss
   server: efan9863.dns8656815.com
-  port: 8719
+  port: 8655
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 波兰01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8631
   cipher: rc4-md5
   password: efanccyun
   plugin: obfs
@@ -3289,126 +1524,20 @@ proxies:
   plugin-opts:
     mode: http
     host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 香港01-最新域名：efanccyun.org
+- name: 保加利亚02
   type: ss
   server: efan9863.dns8656815.com
-  port: 8751
+  port: 8626
   cipher: rc4-md5
   password: efanccyun
   plugin: obfs
   plugin-opts:
     mode: http
     host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 香港02-北京时间02:00-09:00
+- name: 美国07
   type: ss
   server: efan9863.dns8656815.com
-  port: 8752
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 香港20
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8720
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 香港17
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8717
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 香港10
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8760
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 香港03-所有节点0.1倍率
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8753
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 香港08-备用域名：efanyun2.com
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8758
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 香港07-备用域名：efanyun1.com
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8757
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 德国-优化2
-  type: vmess
-  server: m.cnmjin.net
-  port: 16644
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-  ws-path: /
-  ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: 香港14
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8714
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 香港05
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8755
-  cipher: rc4-md5
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    mode: http
-    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 香港11
-  type: ss
-  server: efan9863.dns8656815.com
-  port: 8711
+  port: 8777
   cipher: rc4-md5
   password: efanccyun
   plugin: obfs
@@ -3425,11 +1554,1201 @@ proxies:
   plugin-opts:
     mode: http
     host: 202603122132421-HxTjmRLJIq.download.microsoft.com
-- name: 英国-优化2
+- name: 香港07-备用域名：efanyun1.com
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8757
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 台湾03
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8743
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 匈牙利01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8617
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 香港08-备用域名：efanyun2.com
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8758
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 拉脱维亚02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8654
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 美国03
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8773
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 日本07
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8767
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 香港05
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8755
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 罗马尼亚02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8610
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 美国02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8772
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 香港13
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8713
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 日本08
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8768
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 北马其顿02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8652
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 新加坡05
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8725
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 土耳其02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8789
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 美国05
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8775
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 比利时02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8738
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 香港11
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8711
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 台湾02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8742
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 美国06
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8776
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 香港10
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8760
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 香港12
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8712
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 罗马尼亚01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8609
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 马来西亚02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8606
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 立陶宛01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8635
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 🇻🇳 越南2 IPLC 家宽
+  type: trojan
+  server: starlink-hks2.2513142.xyz
+  port: 21526
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 斯洛伐克02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8634
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 西班牙01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8797
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 葡萄牙01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8621
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 法国02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8784
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 英国01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8786
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 日本10
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8770
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 台湾10
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8750
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 荷兰01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8791
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 日本09
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8769
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 以色列02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8646
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 日本02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8762
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 爱尔兰02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8640
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 台湾动态ip（每5分钟自动更换ip）
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8739
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 🇨🇳_CN_中国_1
+  type: ss
+  server: r3mrcg00129437x.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 新加坡01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8721
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 台湾05
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8745
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 希腊02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8734
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 巴西02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8648
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 日本05
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8765
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 新加坡04
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8724
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 日本01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8761
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 🇯🇵 日本2
+  type: hysteria2
+  server: starlink-jp2.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 20443
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 新加坡03
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8723
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 西班牙02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8798
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 台湾01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8741
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 香港18
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8718
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 台湾07
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8747
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 英国02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8787
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 印度01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8785
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 芬兰01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8619
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 俄罗斯02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8638
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 摩尔多瓦02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8608
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 匈牙利02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8618
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 巴西01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8647
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 塞尔维亚01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8643
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 香港09-备用域名：饿饭.cc
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8759
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 爱尔兰01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8639
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 拉脱维亚01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8653
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 日本06
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8766
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 日本03
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8763
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 台湾08
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8748
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 马来西亚01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8605
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 香港17
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8717
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 葡萄牙02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8622
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 保加利亚01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8625
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 韩国02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8602
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 澳大利亚01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8799
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 新加坡07
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8727
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 冰岛02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8612
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 台湾06
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8746
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 冰岛01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8611
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 香港16
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8716
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 香港20
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8720
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 日本04
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8764
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 摩尔多瓦01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8607
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 美国08
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8778
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 新加坡09
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8729
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 希腊01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8733
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 芬兰02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8620
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 加拿大01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8781
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 瑞士02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8732
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 波兰02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8632
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 新加坡06
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8726
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 韩国01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8601
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 意大利01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8735
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 以色列01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8645
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 哈萨克斯坦02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8642
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 印度02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8790
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 澳大利亚02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8800
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 美国10
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8780
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 🇻🇳 越南1 IPLC 家宽
+  type: trojan
+  server: starlink-hks1.2513142.xyz
+  port: 21526
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 德国02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8796
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 捷克02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8616
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 香港19
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8719
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 新加坡02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8722
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 俄罗斯01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8637
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 斯洛文尼亚02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8650
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 塞尔维亚02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8644
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 法国01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8783
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 北马其顿01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8651
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 美国09
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8779
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 立陶宛02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8636
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 意大利02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8736
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 荷兰02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8793
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 哈萨克斯坦01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8641
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 瑞士01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8731
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 土耳其01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8788
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 奥地利02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8656
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 美国04
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8774
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 🇧🇷_BR_巴西->🇷🇺_RU_俄罗斯
+  type: vless
+  server: azaranik.ir
+  port: 2053
+  uuid: 7b3ba8c0-0bb2-469a-a396-1c360e7da8d7
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kffoepwiqmiovvunwoowow2jowpqpwkc892.mrpixanos.ir
+  tls: true
+  sni: kffoepwiqmiovvunwoowow2jowpqpwkc892.mrpixanos.ir
+  skip-cert-verify: false
+- name: 加拿大02
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8782
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 德国01
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8794
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+  type: vmess
+  server: v45.hdacd.com
+  port: 30845
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  udp: true
+- name: 🇰🇭 柬埔寨1 IPLC 家宽
+  type: trojan
+  server: starlink-hks1.2513142.xyz
+  port: 21527
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 香港WAP-优化2-Gemini
   type: vmess
   server: m.cnmjin.net
-  port: 16645
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
+  port: 16622
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
   alterId: 0
   cipher: auto
   udp: true
@@ -3437,11 +2756,230 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
   ws-path: /
   ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: disney_netflix_HK |43.84Mb
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 🇵🇭 菲律宾2 IPLC
+  type: trojan
+  server: starlink-hks2.2513142.xyz
+  port: 21525
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇵🇭 菲律宾1 IPLC
+  type: trojan
+  server: starlink-hks1.2513142.xyz
+  port: 21525
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 机场推荐:dafei.de 香港 11
+  server: 23e67196-td8hs0-txfm0f-1qxa1.hkt.cdnhuawei.com
+  port: 8443
+  type: http
+  username: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
+  password: <password>
+  tls: true
+  sni: 23e67196-td8hs0-txfm0f-1qxa1.hkt.cdnhuawei.com
+- name: 🇭🇰 机场推荐:dafei.de 香港 05
+  type: vless
+  server: cc6b4011-td8hs0-ten5li-mv7m.hkt2.cdnhuawei.com
+  port: 8443
+  uuid: 94d40708-8273-11ea-8fc9-f23c913c8d2b
+  udp: true
+- name: 香港-优化2-Gemini
+  type: vmess
+  server: m.cnmjin.net
+  port: 16632
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 🇨🇳 台湾11 家宽
+  type: trojan
+  server: starlink-tw5.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 12408
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 香港3 IPLC
+  type: trojan
+  server: starlink-hks3.2513142.xyz
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 21523
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇵🇰 巴基斯坦1
+  type: trojan
+  server: z-sg1.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 10011
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  udp: true
+- name: 🇦🇺 澳大利亚2
+  type: trojan
+  server: starlink-au.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 44443
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇸🇦 沙特阿拉伯2
+  type: trojan
+  server: z-sg2.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 10212
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: disney_HK |28.27Mb
+  server: b4e50fa9-td8hs0-teoi3e-1thts.hkt2.cdnhuawei.com
+  type: anytls
+  port: 8443
+  udp: true
+  skip-cert-verify: true
+  password: cb96c846-fd6d-11ef-a910-f23c9164ca5d
+- name: 🇭🇰 香港1 IPLC
+  type: trojan
+  server: starlink-hks1.2513142.xyz
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 21521
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: ' - [直连-香港-动态家宽] ✨ 1x'
+  type: ss
+  server: hk-nat-toys-ddns.337979.xyz
+  port: 20415
+  cipher: aes-256-gcm
+  password: 2RGZ3DHE9cNSLkzr
+  udp: true
+- name: 🇧🇩 孟加拉国1
+  type: trojan
+  server: z-sg1.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 10010
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 新加坡-优化2-Gemini-GPT
+  type: vmess
+  server: m.cnmjin.net
+  port: 16618
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 🇭🇰 香港7 家宽
+  type: trojan
+  server: starlink-hkt1.2513142.xyz
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 21520
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇰🇭 柬埔寨2 IPLC 家宽
+  type: trojan
+  server: starlink-hks2.2513142.xyz
+  port: 21527
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇮🇳 印度2
+  type: trojan
+  server: z-sg2.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 10106
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇮🇳 印度1
+  type: trojan
+  server: z-sg1.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 10106
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳 台湾10 家宽
+  type: trojan
+  server: starlink-tw4.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 20113
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳 台湾4 家宽
+  type: hysteria2
+  server: starlink-tw4.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 20115
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 橘子电报频道@juzibaipiao_84
+  type: hysteria2
+  server: hk01.poke-mon.xyz
+  port: 20000
+  password: e04dec7c-6dee-4c9d-a708-271f25ab9bea
+  udp: true
+  sni: www.apple.com
+  skip-cert-verify: true
+- name: 🇦🇶 南极洲1 IPLC
+  type: trojan
+  server: z-sg1.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 10109
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  udp: true
+- name: 🇹🇼TW_2 | ⬇️ 3.0MB/s
+  type: ss
+  server: r3mrcg007147vhp.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇧🇭 巴林1
+  type: trojan
+  server: z-sg1.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 10112
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇦🇪 阿联酋1
+  type: trojan
+  server: z-sg1.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 10012
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: Relay_🇭🇰HK-🇭🇰HK_163 |13.71Mb
   server: sv3.wy888.us
   type: vmess
   country: 🇭🇰HK
@@ -3455,166 +2993,6 @@ proxies:
   h2-opts: {}
   tls: true
   skip-cert-verify: true
-- name: 🇸🇦 沙特阿拉伯2
-  type: trojan
-  server: z-sg2.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10212
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 加拿大-优化2
-  type: vmess
-  server: m.cnmjin.net
-  port: 16641
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-  ws-path: /
-  ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- type: vless
-  name: 日本
-  server: jp4.dnscloudcloud.top
-  port: 56702
-  uuid: 4269163f-c4aa-4c54-bfec-b1a4dfda9fde
-  skip-cert-verify: true
-  network: tcp
-  flow: xtls-rprx-vision
-  servername: addons.mozilla.org
-  tls: false
-  udp: true
-- type: vless
-  name: 美国_3
-  server: us3do.dnscloudcloud.top
-  port: 56702
-  uuid: 4269163f-c4aa-4c54-bfec-b1a4dfda9fde
-  skip-cert-verify: true
-  network: tcp
-  flow: xtls-rprx-vision
-  servername: addons.mozilla.org
-  tls: false
-  udp: true
-- type: vless
-  name: 新加坡
-  server: sg2.dnscloudcloud.top
-  port: 56702
-  uuid: 4269163f-c4aa-4c54-bfec-b1a4dfda9fde
-  skip-cert-verify: true
-  network: tcp
-  flow: xtls-rprx-vision
-  servername: addons.mozilla.org
-  tls: false
-  udp: true
-- name: 🇯🇵 日本6
-  type: hysteria2
-  server: starlink-jp6.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 20443
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 日本06|L1节点|解锁
-  type: ss
-  server: jp01.x.kuaimaonodebgp.com
-  port: 52626
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
-  udp: true
-- name: 🇨🇳 台湾10 家宽
-  type: trojan
-  server: starlink-tw4.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 20113
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: disney_netflix_US |23.43Mb
-  server: fbxt0765gh0pielsss.ftisthebest.com
-  type: trojan
-  port: 56251
-  udp: true
-  password: e4895ea3-7b4a-3f46-ba5a-44ac4a691635
-  sni: fbxt0765gh0pielsss.ftisthebest.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本1
-  type: hysteria2
-  server: starlink-jp1.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 20443
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 香港-优化3-Gemini
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16632
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-  ws-path: /
-  ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: 台湾3 bgp 1x
-  type: trojan
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  port: 55023
-  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
-  udp: true
-  sni: www.h3yun.com
-  skip-cert-verify: true
-- name: 美国LA-优化2-GPT
-  type: vmess
-  server: m.cnmjin.net
-  port: 16648
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-  ws-path: /
-  ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: 香港WAP-优化3-Gemini
-  type: vmess
-  server: t.cnmjcn.cyou
-  port: 16622
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-  ws-path: /
-  ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: 台湾2 bgp 1x
-  type: trojan
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  port: 55022
-  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
-  udp: true
-  sni: www.h3yun.com
-  skip-cert-verify: true
 - name: 🇧🇩 孟加拉国2
   type: trojan
   server: z-sg2.mfa.cat
@@ -3623,11 +3001,27 @@ proxies:
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: 🇮🇳 印度2
+- name: 🇭🇰 香港9 家宽
   type: trojan
-  server: z-sg2.mfa.cat
+  server: starlink-hks2.2513142.xyz
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10106
+  port: 21520
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇭🇰 机场推荐:dafei.de 香港 08
+  server: o0oo0o0h3.kobayx.art
+  port: 11451
+  type: anytls
+  password: 2234edf0-bd57-40dc-83ae-32ffa7eef8da
+  udp: true
+  skip-cert-verify: true
+  sni: o0oo0o0h3.kobayx.art
+- name: 🇭🇰 香港2 IPLC
+  type: trojan
+  server: starlink-hks2.2513142.xyz
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 21522
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
@@ -3639,62 +3033,156 @@ proxies:
   skip-cert-verify: true
   sni: www.cloudflare.com
   udp: true
-- name: 🇲🇴 澳门2
-  type: trojan
-  server: z-sg2.mfa.cat
-  port: 10008
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
-- name: 新加坡-优化3-Gemini
+- type: hysteria2
+  name: 🇯🇵 机场推荐:dafei.de 日本 08
+  server: jp-hy2.onetaplink.app
+  port: 5443
+  password: 48b36b6a-eaa6-4843-9231-0bb8b38b5da5
+  sni: hy2-jp.onetaplink.app
+  obfs: salamander
+  obfs-password: CF7WJGiw6r1c8imX
+  skip-cert-verify: false
+  tfo: false
+- name: 🇲🇴澳门｜05｜BGP
   type: vmess
-  server: t.cnmjcn.cyou
-  port: 16618
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
+  server: cfu.456815.xyz
+  port: 2096
+  uuid: fe0fda62-79ff-467e-bef4-983322c1d21b
   alterId: 0
   cipher: auto
   udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: ll.456815.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /sdfsf
     headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-  ws-path: /
-  ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: 台湾1 bgp 1x
+      Host: ll.456815.xyz
+- name: 🇯🇵 日本1
+  type: hysteria2
+  server: starlink-jp1.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 20443
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 日本4
+  type: hysteria2
+  server: starlink-jp4.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 20443
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 日本3
+  type: hysteria2
+  server: starlink-jp3.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 20443
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 新加坡4 bgp 1x
   type: trojan
   server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  port: 55021
+  port: 55034
   password: da6f49ae-b0dd-4527-b993-ae6ec688000c
   udp: true
   sni: www.h3yun.com
   skip-cert-verify: true
-- name: 台湾06|L1节点|解锁
-  type: ss
-  server: tw01.x.kuaimaonodebgp.com
-  port: 52666
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
+- name: 🇯🇵 日本6
+  type: hysteria2
+  server: starlink-jp6.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 20443
+  sni: www.cloudflare.com
+  skip-cert-verify: true
   udp: true
+- name: 🇭🇰香港 | 低倍率丨0.5x
+  type: trojan
+  server: hkf.fzvip.cc
+  port: 38050
+  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
+  udp: true
+  sni: www.icloud.com
+  skip-cert-verify: true
+- name: 🇯🇵 免费-日本6-Ver.8
+  server: yjasvv2-g06.jp06-jz-vm0.entry.fr0528.art
+  port: 28788
+  type: vmess
+  uuid: 85de20b1-6241-3f2a-94bf-2af152278953
+  alterId: 1
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  udp: true
+- name: 🇯🇵 日本5
+  type: hysteria2
+  server: starlink-jp5.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 20443
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: Hong Kong_Wong Tai Sin_vmess_102
+  port: 30807
+  server: v10.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: 香港04
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8754
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: ' - [国际入口-马来西亚] ✨ 5x'
+  type: ss
+  server: malaysia-bytevirt.337979.xyz
+  port: 33304
+  cipher: aes-256-gcm
+  password: 2RGZ3DHE9cNSLkzr
+  udp: true
+- name: 🇷🇴_RO_罗马尼亚
+  type: vless
+  server: ma-1.vpnd.io
+  port: 12574
+  uuid: 17cdeaa0-d9f0-443d-8f14-80cef1de5529
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  sni: amazon.com
+  skip-cert-verify: false
 - name: 🇬🇷_GR_希腊
   type: vless
   server: cze01-vlr01.tcp-reset-club.net
   port: 10443
   uuid: 42a7df85-0739-4760-a248-32a491abfa2a
-  servername: hls-svod.itunes.apple.com
-  tls: true
+  udp: true
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
-    short-id: '31'
-- name: 日本-优化3
+  tls: true
+  sni: hls-svod.itunes.apple.com
+  skip-cert-verify: false
+- name: 🇮🇩 机场推荐:dafei.de 印尼 02
+  type: ss
+  server: idxva.osaip.net
+  port: 33333
+  cipher: 2022-blake3-aes-256-gcm
+  password: MTQ3NDRiNGVhMGEyNDMyZGVmMGZiOWMzMGE0ODJmZTQ%3D%3ANTA2NjMzNzQtYjc0OS00YWNmLWJhY2YtZTAwZWMwMjk%3D
+  udp: true
+- name: 香港-优化3-Gemini
   type: vmess
   server: t.cnmjcn.cyou
-  port: 16617
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
+  port: 16632
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
   alterId: 0
   cipher: auto
   udp: true
@@ -3702,51 +3190,15 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
   ws-path: /
   ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: 香港4 bgp 1x
-  type: trojan
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  port: 55014
-  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
-  udp: true
-  sni: www.h3yun.com
-  skip-cert-verify: true
-- name: 台湾05|L1节点|解锁
-  type: ss
-  server: tw01.x.kuaimaonodebgp.com
-  port: 52665
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
-  udp: true
-- name: 台湾04|L1节点|解锁
-  type: ss
-  server: tw01.x.kuaimaonodebgp.com
-  port: 52664
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
-  udp: true
-- name: 🇨🇳_CN_中国->🇬🇧_GB_英国
-  type: ss
-  server: hd117-xjp-jd.huidu51.com
-  port: 46611
-  cipher: chacha20-ietf-poly1305
-  password: eebfd479-3c1f-46d5-b83d-3ccb3f07bf9a
-- name: 🇹🇼台湾 | 低倍率丨0.5x
-  type: trojan
-  server: twf.fzvip.cc
-  port: 38100
-  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
-  udp: true
-  sni: www.icloud.com
-  skip-cert-verify: true
-- name: 台湾-优化2-GPT
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 新加坡-优化3-Gemini
   type: vmess
-  server: m.cnmjin.net
-  port: 16616
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
+  server: t.cnmjcn.cyou
+  port: 16618
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
   alterId: 0
   cipher: auto
   udp: true
@@ -3754,146 +3206,198 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
   ws-path: /
   ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: Relay_-🇸🇬SG_58 |22.37Mb
+  server: node1.nanonet.host
+  type: vless
+  port: 22539
+  udp: true
+  uuid: d6d7e024-0a49-483d-bcd7-048c4d30eca6
+  network: tcp
+  tls: true
+  servername: node1.nanonet.host
+  packet-encoding: ''
+- name: 剩余流量：-3.49 GB
+  type: vmess
+  server: planb.mojcn.com
+  port: 16617
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 🇨🇳 台湾7 家宽
   type: trojan
-  server: my01.jsylianjie6.com
-  port: 45720
-  password: d5fa43f9-1ace-4b8f-b865-627e67b1fe37
-  sni: jsygouer.weixin-baidu-qq.com
-  skip-cert-verify: true
-  tls: false
-- name: 香港3 bgp 1x
-  type: trojan
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  port: 55013
-  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
-  udp: true
-  sni: www.h3yun.com
-  skip-cert-verify: true
-- name: 台湾03|L1节点|解锁
-  type: ss
-  server: tw01.x.kuaimaonodebgp.com
-  port: 52663
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
-  udp: true
-- name: 橘子电报频道@juzibaipiao_161
-  type: ss
-  server: daxo.owwoedu.com
-  port: 38311
-  cipher: aes-128-gcm
-  password: 739381dc-5f88-4b56-9dad-b475b96f0b79
-  udp: true
-- name: 橘子电报频道@juzibaipiao_160
-  type: ss
-  server: daxo.owwoedu.com
-  port: 38306
-  cipher: aes-128-gcm
-  password: 739381dc-5f88-4b56-9dad-b475b96f0b79
-  udp: true
-- name: 香港2 bgp 1x
-  type: trojan
-  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  port: 55012
-  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
-  udp: true
-  sni: www.h3yun.com
-  skip-cert-verify: true
-- name: 🇸🇬新加坡 | 低倍率丨0.5x
-  type: trojan
-  server: sgf.fzvip.cc
-  port: 38150
-  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
-  udp: true
-  sni: www.icloud.com
-  skip-cert-verify: true
-- name: 台湾02|L1节点|解锁
-  type: ss
-  server: tw01.x.kuaimaonodebgp.com
-  port: 52662
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
-  udp: true
-- name: 🇦🇪 阿联酋1
-  type: trojan
-  server: z-sg1.mfa.cat
+  server: starlink-tw1.mfa.cat
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 10012
+  port: 12410
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: 台湾01|L1节点|解锁
-  type: ss
-  server: tw01.x.kuaimaonodebgp.com
-  port: 52661
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
-  udp: true
-- name: 🇲🇾马来西亚丨IEPL丨3x
-  type: trojan
-  server: my1.f-vip.top
-  port: 25311
-  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
-  udp: true
-  sni: v1-dy.ixigua.com
-  skip-cert-verify: true
-- name: 🇰🇷韩国01丨IEPL丨2x
-  type: trojan
-  server: kr1.f-vip.top
-  port: 25190
-  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
-  udp: true
-  sni: v1-dy.ixigua.com
-  skip-cert-verify: true
-- name: 🇺🇸美国家宽丨IEPL丨4x
-  type: trojan
-  server: us3.f-vip.top
-  port: 25251
-  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
-  udp: true
-  sni: v1-dy.ixigua.com
-  skip-cert-verify: true
-- name: 🇯🇵日本01丨IEPL丨2x
-  type: trojan
-  server: jp1.f-vip.top
-  port: 25160
-  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
-  udp: true
-  sni: v1-dy.ixigua.com
-  skip-cert-verify: true
-- name: 官网:https://www.xn--wstp0p.com
+- name: 新加坡3 bgp 1x
   type: trojan
   server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
-  port: 55011
+  port: 55033
   password: da6f49ae-b0dd-4527-b993-ae6ec688000c
   udp: true
   sni: www.h3yun.com
   skip-cert-verify: true
-- name: 日本05|L1节点|解锁
+- name: 新加坡 [ 1X ] A
   type: ss
-  server: jp01.x.kuaimaonodebgp.com
-  port: 52625
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  server: a005.standard-nodes-chickenfarms.com
+  port: 50000
+  cipher: aes-256-gcm
+  password: 95c9ff2e-c881-4005-837c-c1e77ebac747
   udp: true
-- name: 🇩🇪 机场推荐:dafei.de 德国 08
+- name: 🇳🇱_NL_荷兰
   type: vless
-  server: cdn.7zz.cn
-  port: 2086
-  uuid: 73829173-bb56-442b-a8d4-ec732c020945
+  server: mf-th.sw8.pw
+  port: 20001
+  uuid: 93e3b6b8-209f-487a-b977-3bd50b94953a
   udp: true
-  network: httpupgrade
-- name: 日本03|L1节点|解锁
+- name: 剩余流量：420.73 GB
   type: ss
-  server: jp01.x.kuaimaonodebgp.com
-  port: 52623
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  server: a001.standard-nodes-chickenfarms.com
+  port: 50000
+  cipher: aes-256-gcm
+  password: 95c9ff2e-c881-4005-837c-c1e77ebac747
   udp: true
+- name: 日本-优化2
+  type: vmess
+  server: m.cnmjin.net
+  port: 16617
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: vmess
+  server: v8.hdacd.com
+  port: 30808
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: vmess
+  server: v35.hdacd.com
+  port: 30835
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  udp: true
+- name: 🇺🇸 机场推荐:dafei.de 美国 09
+  server: hous.kobayx.art
+  port: 11454
+  type: anytls
+  password: 2234edf0-bd57-40dc-83ae-32ffa7eef8da
+  udp: true
+  skip-cert-verify: true
+  sni: hous.kobayx.art
+- name: 🇮🇷_IR_伊朗
+  type: vmess
+  server: v9.hdacd.com
+  port: 30809
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  udp: true
+- name: 香港03-所有节点0.1倍率
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8753
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 🇨🇳_CN_中国_5
+  type: trojan
+  server: khk9527.vision.jp.eu.org
+  port: 99
+  password: 6d00fde742644d11
+  skip-cert-verify: true
+  tls: false
+- name: 🇨🇳_CN_中国
+  type: vmess
+  server: v4.hdacd.com
+  port: 30804
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  udp: true
+- name: 🇬🇧 机场推荐:dafei.de 英国 01
+  type: vless
+  server: gbr1.frostbot.ru
+  port: 6443
+  uuid: 5b77fb18-cece-4759-9a81-571f1be53e0c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: x-VSf_bBIC1iELDvaoM4SKMTK2YAAnUlVkhAWBbvpSc
+    short-id: b9605803fb4b
+  sni: gbr1.frostbot.ru
+- name: 🇺🇸 机场推荐:dafei.de 美国 12
+  server: 1ec25151-td8hs0-txfm0f-1qxa1.cu.oshuawei.com
+  port: 15229
+  type: http
+  username: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
+  password: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
+  tls: true
+  sni: 1ec25151-td8hs0-txfm0f-1qxa1.cu.oshuawei.com
+- name: 🇹🇭 泰国2
+  type: trojan
+  server: starlink-th.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 44443
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇬🇧 机场推荐:dafei.de 英国 01
+  server: uk3.shiyuandian.shop
+  port: 30000
+  type: anytls
+  password: ae845cbd-08fb-4346-929a-e28a6f3960a8
+  udp: true
+  skip-cert-verify: true
+  sni: uk3.shiyuandian.shop
+- type: anytls
+  name: 🇯🇵 机场推荐:dafei.de 日本 14
+  server: zdirectjp1.kobayx.art
+  port: 11446
+  sni: zdirectjp1.kobayx.art
+  skip-cert-verify: true
+  password: 2234edf0-bd57-40dc-83ae-32ffa7eef8da
+  allowInsecure: '1'
+  udp: true
+- name: 🇺🇸美国丨低倍率丨0.4x
+  type: trojan
+  server: usf.fzvip.cc
+  port: 39000
+  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
+  udp: true
+  sni: www.icloud.com
+  skip-cert-verify: true
 - name: 🇬🇷_GR_希腊->🇺🇸_US_美国
   type: vless
   server: fin01-vlr01.tcp-reset-club.net
@@ -3906,18 +3410,237 @@ proxies:
   reality-opts:
     public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
     short-id: '31'
-- name: 🇬🇧 机场推荐:dafei.de 英国 01
-  server: uk3.shiyuandian.shop
-  port: 30000
-  type: anytls
-  password: ae845cbd-08fb-4346-929a-e28a6f3960a8
+- name: 备用临时日本，X4
+  type: ss
+  server: xxww.owwoedu.com
+  port: 38303
+  cipher: aes-128-gcm
+  password: a1c68fcf-ad91-494a-826c-065cecd51941
   udp: true
+- name: 备用临时新加坡，X4
+  type: ss
+  server: xxww.owwoedu.com
+  port: 38310
+  cipher: aes-128-gcm
+  password: a1c68fcf-ad91-494a-826c-065cecd51941
+  udp: true
+- name: 备用临时香港，X4
+  type: ss
+  server: xxww.owwoedu.com
+  port: 38302
+  cipher: aes-128-gcm
+  password: a1c68fcf-ad91-494a-826c-065cecd51941
+  udp: true
+- name: 日本-优化3
+  type: vmess
+  server: t.cnmjcn.cyou
+  port: 16617
+  uuid: 1ca88770-39ea-44da-b956-0c57efc0aa49
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+  ws-path: /
+  ws-headers:
+    Host: 38acc1f6c3fd01b1bd2e0a69691505ea.mobgslb.tbcache.com
+- name: 备用临时台湾，X4
+  type: ss
+  server: xxww.owwoedu.com
+  port: 38308
+  cipher: aes-128-gcm
+  password: a1c68fcf-ad91-494a-826c-065cecd51941
+  udp: true
+- name: 台湾4 bgp 1x
+  type: trojan
+  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
+  port: 55024
+  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
+  udp: true
+  sni: www.h3yun.com
   skip-cert-verify: true
-  sni: uk3.shiyuandian.shop
-- name: 日本04|L1节点|解锁
+- name: 新加坡1 bgp 1x
+  type: trojan
+  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
+  port: 55031
+  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
+  udp: true
+  sni: www.h3yun.com
+  skip-cert-verify: true
+- name: 新加坡2 bgp 1x
+  type: trojan
+  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
+  port: 55032
+  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
+  udp: true
+  sni: www.h3yun.com
+  skip-cert-verify: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  type: vmess
+  server: v29.hdacd.com
+  port: 30829
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: 香港3 bgp 1x
+  type: trojan
+  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
+  port: 55013
+  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
+  udp: true
+  sni: www.h3yun.com
+  skip-cert-verify: true
+- name: 香港2 bgp 1x
+  type: trojan
+  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
+  port: 55012
+  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
+  udp: true
+  sni: www.h3yun.com
+  skip-cert-verify: true
+- name: 官网:https://www.xn--wstp0p.com
+  type: trojan
+  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
+  port: 55011
+  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
+  udp: true
+  sni: www.h3yun.com
+  skip-cert-verify: true
+- name: 台湾2 bgp 1x
+  type: trojan
+  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
+  port: 55022
+  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
+  udp: true
+  sni: www.h3yun.com
+  skip-cert-verify: true
+- name: 台湾1 bgp 1x
+  type: trojan
+  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
+  port: 55021
+  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
+  udp: true
+  sni: www.h3yun.com
+  skip-cert-verify: true
+- name: 台湾3 bgp 1x
+  type: trojan
+  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
+  port: 55023
+  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
+  udp: true
+  sni: www.h3yun.com
+  skip-cert-verify: true
+- name: 香港4 bgp 1x
+  type: trojan
+  server: f4d7f1c2f3b80976a5e2c1d4b3f0f321.358.onl
+  port: 55014
+  password: da6f49ae-b0dd-4527-b993-ae6ec688000c
+  udp: true
+  sni: www.h3yun.com
+  skip-cert-verify: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: vmess
+  server: v33.hdacd.com
+  port: 30833
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: 🇮🇷_IR_伊朗->🇺🇸_US_美国
+  type: vmess
+  server: v46.hdacd.com
+  port: 30846
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  udp: true
+- name: 🇮🇷_IR_伊朗->🇺🇸_US_美国
+  type: vmess
+  server: v36.hdacd.com
+  port: 30836
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  udp: true
+- name: 新加坡03|L1节点|解锁
+  type: ss
+  server: sg01.x.kuaimaonodebgp.com
+  port: 52633
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  udp: true
+- name: 🇨🇳_CN_中国->🇬🇧_GB_英国
+  type: ss
+  server: hd117-xjp-jd.huidu51.com
+  port: 46611
+  cipher: chacha20-ietf-poly1305
+  password: eebfd479-3c1f-46d5-b83d-3ccb3f07bf9a
+  udp: true
+- name: 新加坡04|L1节点|解锁
+  type: ss
+  server: sg01.x.kuaimaonodebgp.com
+  port: 52634
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  udp: true
+- name: 新加坡02|L1节点|解锁
+  type: ss
+  server: sg01.x.kuaimaonodebgp.com
+  port: 52632
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  udp: true
+- name: 新加坡01|L1节点|解锁
+  type: ss
+  server: sg01.x.kuaimaonodebgp.com
+  port: 52631
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  udp: true
+- name: 香港02-北京时间02:00-09:00
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8752
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 新加坡06|L1节点|解锁
+  type: ss
+  server: sg01.x.kuaimaonodebgp.com
+  port: 52636
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  udp: true
+- name: 新加坡05|L1节点|解锁
+  type: ss
+  server: sg01.x.kuaimaonodebgp.com
+  port: 52635
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  udp: true
+- name: 香港01-最新域名：efanccyun.org
+  type: ss
+  server: efan9863.dns8656815.com
+  port: 8751
+  cipher: rc4-md5
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202603122132421-HxTjmRLJIq.download.microsoft.com
+- name: 日本05|L1节点|解锁
   type: ss
   server: jp01.x.kuaimaonodebgp.com
-  port: 52624
+  port: 52625
   cipher: chacha20-ietf-poly1305
   password: 8c81607e-a261-4277-9240-0ac2923f887d
   udp: true
@@ -3928,138 +3651,20 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 8c81607e-a261-4277-9240-0ac2923f887d
   udp: true
-- name: 橘子电报频道@juzibaipiao_157
+- name: 日本06|L1节点|解锁
   type: ss
-  server: daxo.owwoedu.com
-  port: 38312
-  cipher: aes-128-gcm
-  password: 739381dc-5f88-4b56-9dad-b475b96f0b79
-  udp: true
-- name: 橘子电报频道@juzibaipiao_154
-  type: ss
-  server: daxo.owwoedu.com
-  port: 38309
-  cipher: chacha20-ietf-poly1305
-  password: 739381dc-5f88-4b56-9dad-b475b96f0b79
-  udp: true
-- type: vless
-  name: 美国_4
-  server: us1do.dnscloudcloud.top
-  port: 56702
-  uuid: 4269163f-c4aa-4c54-bfec-b1a4dfda9fde
-  skip-cert-verify: true
-  network: tcp
-  flow: xtls-rprx-vision
-  servername: addons.mozilla.org
-  tls: false
-  udp: true
-- name: 香港06|L1节点|解锁
-  type: ss
-  server: hk01.x.kuaimaonodebgp.com
-  port: 52616
+  server: jp01.x.kuaimaonodebgp.com
+  port: 52626
   cipher: chacha20-ietf-poly1305
   password: 8c81607e-a261-4277-9240-0ac2923f887d
   udp: true
-- name: 自动优选订阅可公开分享
-  server: cf.090227.xyz
-  port: 2095
-  client-fingerprint: randomized
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnmfangbinxing.cnmfangbinxing-k.workers.dev
-- name: 橘子电报频道@juzibaipiao_153
+- name: 日本04|L1节点|解锁
   type: ss
-  server: daxo.owwoedu.com
-  port: 38321
-  cipher: aes-128-gcm
-  password: 739381dc-5f88-4b56-9dad-b475b96f0b79
+  server: jp01.x.kuaimaonodebgp.com
+  port: 52624
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
   udp: true
-- name: 🇯🇵 免费-日本4-Ver.8
-  server: 5n4s4bn-g06.jp04-1d-vm0.entry.fr0528.art
-  port: 449
-  type: vmess
-  uuid: 85de20b1-6241-3f2a-94bf-2af152278953
-  alterId: 1
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  udp: true
-- name: 🇺🇸美国02丨IEPL丨2x
-  type: trojan
-  server: us2.f-vip.top
-  port: 25240
-  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
-  udp: true
-  sni: v1-dy.ixigua.com
-  skip-cert-verify: true
-- name: 橘子电报频道@juzibaipiao_152
-  type: ss
-  server: daxo.owwoedu.com
-  port: 38313
-  cipher: aes-128-gcm
-  password: 739381dc-5f88-4b56-9dad-b475b96f0b79
-  udp: true
-- name: 香港WAP-优化2-Gemini
-  type: vmess
-  server: m.cnmjin.net
-  port: 16622
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-  ws-path: /
-  ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: 橘子电报频道@juzibaipiao_135
-  type: ss
-  server: daxo.owwoedu.com
-  port: 38319
-  cipher: aes-128-gcm
-  password: 739381dc-5f88-4b56-9dad-b475b96f0b79
-  udp: true
-- name: 🇰🇷韩国02丨IEPL丨2x
-  type: trojan
-  server: kr2.f-vip.top
-  port: 25200
-  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
-  udp: true
-  sni: v1-dy.ixigua.com
-  skip-cert-verify: true
-- name: 橘子电报频道@juzibaipiao_134
-  type: ss
-  server: daxo.owwoedu.com
-  port: 38318
-  cipher: aes-128-gcm
-  password: 739381dc-5f88-4b56-9dad-b475b96f0b79
-  udp: true
-- name: 香港-优化2-Gemini
-  type: vmess
-  server: m.cnmjin.net
-  port: 16632
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-  ws-path: /
-  ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
 - name: 日本01|L1节点|解锁
   type: ss
   server: jp01.x.kuaimaonodebgp.com
@@ -4067,132 +3672,189 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 8c81607e-a261-4277-9240-0ac2923f887d
   udp: true
-- name: 新加坡-优化2-Gemini-GPT
+- name: 🇮🇷_IR_伊朗->🇵🇱_PL_波兰
   type: vmess
-  server: m.cnmjin.net
-  port: 16618
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
+  server: v30.hdacd.com
+  port: 30830
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 0
   cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-  ws-path: /
-  ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: 橘子电报频道@juzibaipiao_133
-  type: ss
-  server: daxo.owwoedu.com
-  port: 38320
-  cipher: aes-128-gcm
-  password: 739381dc-5f88-4b56-9dad-b475b96f0b79
-  udp: true
-- name: 橘子电报频道@juzibaipiao_132
-  type: ss
-  server: daxo.owwoedu.com
-  port: 38304
-  cipher: aes-128-gcm
-  password: 739381dc-5f88-4b56-9dad-b475b96f0b79
-  udp: true
-- name: 日本-优化2
-  type: vmess
-  server: m.cnmjin.net
-  port: 16617
-  uuid: 074c3ea9-c977-470e-8835-bba1483d5c02
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-  ws-path: /
-  ws-headers:
-    Host: ea6aff21b5514f17a25b7866d1f65910.mobgslb.tbcache.com
-- name: 橘子电报频道@juzibaipiao_131
-  type: ss
-  server: daxo.owwoedu.com
-  port: 38307
-  cipher: aes-128-gcm
-  password: 739381dc-5f88-4b56-9dad-b475b96f0b79
-  udp: true
-- name: 印度02|L1节点|解锁
-  type: ss
-  server: in01.x.kuaimaonodebgp.com
-  port: 52652
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
-  udp: true
-- name: 印度01|L1节点|解锁
-  type: ss
-  server: in01.x.kuaimaonodebgp.com
-  port: 52651
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
-  udp: true
-- name: 香港02|L1节点|解锁
-  type: ss
-  server: hk01.x.kuaimaonodebgp.com
-  port: 52612
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
-  udp: true
-- name: 🇹🇷土耳其丨IEPL丨2x
-  type: trojan
-  server: tr1.f-vip.top
-  port: 25380
-  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
-  udp: true
-  sni: v1-dy.ixigua.com
-  skip-cert-verify: true
-- name: 🇷🇺俄罗斯丨IEPL丨2x
-  type: trojan
-  server: ru1.f-vip.top
-  port: 25360
-  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
-  udp: true
-  sni: v1-dy.ixigua.com
-  skip-cert-verify: true
-- name: disney_HK | 9.32Mb
-  server: aflzzul.meiquankongjian.com
-  type: vmess
-  country: 🇹🇼TW
-  port: 52513
-  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
-  alterId: 0
-  cipher: auto
-  network: ws
-  servername: aflzzul.meiquankongjian.com
-  http-opts: {}
-  h2-opts: {}
-  skip-cert-verify: true
-  ws-opts:
-    path: /564dfa20/
-    headers:
-      HOST: aflzzul.meiquankongjian.com
-- name: 🇺🇦乌克兰丨IEPL丨2x
-  type: trojan
-  server: ua1.f-vip.top
-  port: 25370
-  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
-  udp: true
-  sni: v1-dy.ixigua.com
-  skip-cert-verify: true
-- name: 🇯🇵 免费-日本3-Ver.7
-  server: 2deb99s-g06.jp03-j7-vm0.entry.fr0528.art
-  port: 21586
-  type: vmess
-  uuid: 0628f524-c34d-3ab2-b361-016ed6eb5b66
-  alterId: 1
-  cipher: auto
-  tls: true
+  tls: false
   skip-cert-verify: false
+- name: 日本03|L1节点|解锁
+  type: ss
+  server: jp01.x.kuaimaonodebgp.com
+  port: 52623
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
   udp: true
-- name: disney_HK |10.03Mb
+- name: 🇬🇧_GB_英国->🇯🇵_JP_日本
+  type: vless
+  server: braskivo.ru
+  port: 8443
+  uuid: cadadce7-0daa-44c1-9f7a-05fe4ebcbb30
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  sni: rbc.ru
+  skip-cert-verify: false
+- name: 🇨🇳_CN_中国->🇸🇬_SG_新加坡
+  type: vmess
+  server: v12.hdacd.com
+  port: 30812
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: 🇸🇦 沙特阿拉伯1
+  type: trojan
+  server: z-sg1.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 10212
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: vmess
+  server: v24.hdacd.com
+  port: 30824
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: trojan
+  server: my01.jsylianjie6.com
+  port: 45720
+  password: d5fa43f9-1ace-4b8f-b865-627e67b1fe37
+  udp: true
+  sni: jsygouer.weixin-baidu-qq.com
+  skip-cert-verify: true
+- name: 美国
+  type: vless
+  server: us1do.dnscloudcloud.top
+  port: 56702
+  uuid: 4269163f-c4aa-4c54-bfec-b1a4dfda9fde
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
+    short-id: 792147b8
+  sni: addons.mozilla.org
+- name: 美国02|L1节点|解锁
+  type: ss
+  server: us01.x.kuaimaonodebgp.com
+  port: 52672
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  udp: true
+- name: 🇨🇦加拿大家宽丨IEPL丨3x
+  type: trojan
+  server: ca1.f-vip.top
+  port: 25260
+  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
+  udp: true
+  sni: v1-dy.ixigua.com
+  skip-cert-verify: true
+- name: 美国03|L1节点|解锁
+  type: ss
+  server: us01.x.kuaimaonodebgp.com
+  port: 52673
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  udp: true
+- name: 美国 - 沙加緬度 - 4
+  server: fbxt0765gh0pielsss.ftisthebest.com
+  type: trojan
+  country: 🏁 ZZ
+  port: 56251
+  password: e4895ea3-7b4a-3f46-ba5a-44ac4a691635
+  skip-cert-verify: true
+  udp: true
+  delay: 2849
+- name: 美国06|L1节点|解锁
+  type: ss
+  server: us01.x.kuaimaonodebgp.com
+  port: 52676
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  udp: true
+- name: 美国04|L1节点|解锁
+  type: ss
+  server: us01.x.kuaimaonodebgp.com
+  port: 52674
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  udp: true
+- name: 美国05|L1节点|解锁
+  type: ss
+  server: us01.x.kuaimaonodebgp.com
+  port: 52675
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  udp: true
+- name: 美国01|L1节点|解锁
+  type: ss
+  server: us01.x.kuaimaonodebgp.com
+  port: 52671
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  udp: true
+- name: 🇭🇰香港04丨IEPL丨2x
+  type: trojan
+  server: hk4.f-vip.top
+  port: 25130
+  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
+  udp: true
+  sni: v1-dy.ixigua.com
+  skip-cert-verify: true
+- name: 🇭🇰香港03丨IEPL丨2x
+  type: trojan
+  server: hk3.f-vip.top
+  port: 25120
+  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
+  udp: true
+  sni: v1-dy.ixigua.com
+  skip-cert-verify: true
+- name: 韩国03|L1节点|解锁
+  type: ss
+  server: kr01.x.kuaimaonodebgp.com
+  port: 52603
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  udp: true
+- name: 韩国05|L1节点|解锁
+  type: ss
+  server: kr01.x.kuaimaonodebgp.com
+  port: 52605
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  udp: true
+- name: 韩国04|L1节点|解锁
+  type: ss
+  server: kr01.x.kuaimaonodebgp.com
+  port: 52604
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  udp: true
+- name: 韩国02|L1节点|解锁
+  type: ss
+  server: kr01.x.kuaimaonodebgp.com
+  port: 52602
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  udp: true
+- name: 韩国01|L1节点|解锁
+  type: ss
+  server: kr01.x.kuaimaonodebgp.com
+  port: 52601
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  udp: true
+- name: Relay_🇹🇼TW-🇭🇰HK_167 |10.03Mb
   server: aflzzul.meiquankongjian.com
   type: vmess
   country: 🇹🇼TW
@@ -4209,10 +3871,64 @@ proxies:
     path: /564dfa20/
     headers:
       HOST: aflzzul.meiquankongjian.com
-- name: 美国06|L1节点|解锁
+- name: Relay_🇹🇼TW-🇭🇰HK_166 | 9.32Mb
+  server: aflzzul.meiquankongjian.com
+  type: vmess
+  country: 🇹🇼TW
+  port: 52513
+  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
+  alterId: 0
+  cipher: auto
+  network: ws
+  servername: aflzzul.meiquankongjian.com
+  http-opts: {}
+  h2-opts: {}
+  skip-cert-verify: true
+  ws-opts:
+    path: /564dfa20/
+    headers:
+      HOST: aflzzul.meiquankongjian.com
+- name: 🇹🇼台湾 | 低倍率丨0.5x
+  type: trojan
+  server: twf.fzvip.cc
+  port: 38100
+  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
+  udp: true
+  sni: www.icloud.com
+  skip-cert-verify: true
+- name: 🇸🇬新加坡 | 低倍率丨0.5x
+  type: trojan
+  server: sgf.fzvip.cc
+  port: 38150
+  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
+  udp: true
+  sni: www.icloud.com
+  skip-cert-verify: true
+- name: 香港04|L1节点|解锁
   type: ss
-  server: us01.x.kuaimaonodebgp.com
-  port: 52676
+  server: hk01.x.kuaimaonodebgp.com
+  port: 52614
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  udp: true
+- name: 香港06|L1节点|解锁
+  type: ss
+  server: hk01.x.kuaimaonodebgp.com
+  port: 52616
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  udp: true
+- name: 香港05|L1节点|解锁
+  type: ss
+  server: hk01.x.kuaimaonodebgp.com
+  port: 52615
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  udp: true
+- name: 香港03|L1节点|解锁
+  type: ss
+  server: hk01.x.kuaimaonodebgp.com
+  port: 52613
   cipher: chacha20-ietf-poly1305
   password: 8c81607e-a261-4277-9240-0ac2923f887d
   udp: true
@@ -4223,6 +3939,53 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 8c81607e-a261-4277-9240-0ac2923f887d
   udp: true
+- name: 香港02|L1节点|解锁
+  type: ss
+  server: hk01.x.kuaimaonodebgp.com
+  port: 52612
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  udp: true
+- name: 自动优选订阅可公开分享
+  server: cf.090227.xyz
+  port: 2095
+  client-fingerprint: randomized
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-l.workers.dev
+- name: 🇨🇿_CZ_捷克->🇺🇸_US_美国
+  type: vless
+  server: quarenty.site
+  port: 8443
+  uuid: ef3e2141-14d9-4764-8960-e7fe539c9bc6
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  sni: rbc.ru
+  skip-cert-verify: false
+- name: 🇰🇷韩国02丨IEPL丨2x
+  type: trojan
+  server: kr2.f-vip.top
+  port: 25200
+  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
+  udp: true
+  sni: v1-dy.ixigua.com
+  skip-cert-verify: true
+- name: 🇰🇷韩国 | 低倍率丨0.4x
+  type: trojan
+  server: krf.fzvip.cc
+  port: 38500
+  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
+  udp: true
+  sni: www.icloud.com
+  skip-cert-verify: true
 - name: 🇩🇪德国丨IEPL丨2x
   type: trojan
   server: de1.f-vip.top
@@ -4231,160 +3994,162 @@ proxies:
   udp: true
   sni: v1-dy.ixigua.com
   skip-cert-verify: true
-- name: 韩国05|L1节点|解锁
+- name: 台湾01|L1节点|解锁
   type: ss
-  server: kr01.x.kuaimaonodebgp.com
-  port: 52605
+  server: tw01.x.kuaimaonodebgp.com
+  port: 52661
   cipher: chacha20-ietf-poly1305
   password: 8c81607e-a261-4277-9240-0ac2923f887d
   udp: true
-- name: 新加坡05|L1节点|解锁
+- name: 台湾03|L1节点|解锁
   type: ss
-  server: sg01.x.kuaimaonodebgp.com
-  port: 52635
+  server: tw01.x.kuaimaonodebgp.com
+  port: 52663
   cipher: chacha20-ietf-poly1305
   password: 8c81607e-a261-4277-9240-0ac2923f887d
   udp: true
-- name: 韩国04|L1节点|解锁
+- name: 印度02|L1节点|解锁
   type: ss
-  server: kr01.x.kuaimaonodebgp.com
-  port: 52604
+  server: in01.x.kuaimaonodebgp.com
+  port: 52652
   cipher: chacha20-ietf-poly1305
   password: 8c81607e-a261-4277-9240-0ac2923f887d
   udp: true
-- name: 新加坡03|L1节点|解锁
+- name: 台湾06|L1节点|解锁
   type: ss
-  server: sg01.x.kuaimaonodebgp.com
-  port: 52633
+  server: tw01.x.kuaimaonodebgp.com
+  port: 52666
   cipher: chacha20-ietf-poly1305
   password: 8c81607e-a261-4277-9240-0ac2923f887d
   udp: true
-- name: 新加坡04|L1节点|解锁
+- name: 台湾05|L1节点|解锁
   type: ss
-  server: sg01.x.kuaimaonodebgp.com
-  port: 52634
+  server: tw01.x.kuaimaonodebgp.com
+  port: 52665
   cipher: chacha20-ietf-poly1305
   password: 8c81607e-a261-4277-9240-0ac2923f887d
   udp: true
-- name: 新加坡02|L1节点|解锁
+- name: 台湾02|L1节点|解锁
   type: ss
-  server: sg01.x.kuaimaonodebgp.com
-  port: 52632
+  server: tw01.x.kuaimaonodebgp.com
+  port: 52662
   cipher: chacha20-ietf-poly1305
   password: 8c81607e-a261-4277-9240-0ac2923f887d
   udp: true
-- name: 🇺🇸 机场推荐:dafei.de 美国 11
-  server: us-sje.baipiao0721-dns78655.eu
-  port: 18443
-  type: anytls
-  password: 9a564888-cfcc-408f-b8bb-caed142cd2c6
-  udp: true
-  skip-cert-verify: true
-  sni: us-sje.baipiao0721-dns78655.eu
-- name: 新加坡06|L1节点|解锁
+- name: 台湾04|L1节点|解锁
   type: ss
-  server: sg01.x.kuaimaonodebgp.com
-  port: 52636
+  server: tw01.x.kuaimaonodebgp.com
+  port: 52664
   cipher: chacha20-ietf-poly1305
   password: 8c81607e-a261-4277-9240-0ac2923f887d
   udp: true
-- name: 🇨🇳_CN_中国_5
+- name: 印度01|L1节点|解锁
+  type: ss
+  server: in01.x.kuaimaonodebgp.com
+  port: 52651
+  cipher: chacha20-ietf-poly1305
+  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  udp: true
+- name: 🇺🇸美国01丨IEPL丨2x
   type: trojan
-  server: khk9527.vision.jp.eu.org
-  port: 99
-  password: 6d00fde742644d11
-  skip-cert-verify: true
-  tls: false
-- name: 🇹🇼台湾01丨IEPL丨2x
-  type: trojan
-  server: tw1.f-vip.top
-  port: 25140
+  server: us1.f-vip.top
+  port: 25230
   password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
   udp: true
   sni: v1-dy.ixigua.com
   skip-cert-verify: true
-- name: 韩国03|L1节点|解锁
-  type: ss
-  server: kr01.x.kuaimaonodebgp.com
-  port: 52603
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
+- name: 🇰🇷韩国01丨IEPL丨2x
+  type: trojan
+  server: kr1.f-vip.top
+  port: 25190
+  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
   udp: true
-- name: 新加坡01|L1节点|解锁
-  type: ss
-  server: sg01.x.kuaimaonodebgp.com
-  port: 52631
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  sni: v1-dy.ixigua.com
+  skip-cert-verify: true
+- name: 🇺🇦乌克兰丨IEPL丨2x
+  type: trojan
+  server: ua1.f-vip.top
+  port: 25370
+  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
   udp: true
-- name: 美国05|L1节点|解锁
-  type: ss
-  server: us01.x.kuaimaonodebgp.com
-  port: 52675
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  sni: v1-dy.ixigua.com
+  skip-cert-verify: true
+- name: 🇭🇰香港01丨IEPL丨2x
+  type: trojan
+  server: hk1.f-vip.top
+  port: 25100
+  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
   udp: true
-- name: 美国04|L1节点|解锁
-  type: ss
-  server: us01.x.kuaimaonodebgp.com
-  port: 52674
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
+  sni: v1-dy.ixigua.com
+  skip-cert-verify: true
+- name: 🇷🇺俄罗斯丨IEPL丨2x
+  type: trojan
+  server: ru1.f-vip.top
+  port: 25360
+  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
   udp: true
-- name: 🇯🇵 免费-日本7-Ver.2
-  server: 5j7nzea-g06.jp07-sh-vm0.entry.fr0528.art
-  port: 28788
-  type: vmess
-  uuid: 85de20b1-6241-3f2a-94bf-2af152278953
-  alterId: 1
-  cipher: auto
-  tls: false
+  sni: v1-dy.ixigua.com
+  skip-cert-verify: true
+- name: 橘子电报频道@juzibaipiao_1
+  type: vless
+  server: www.visa.cn
+  port: 2053
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  udp: true
+  network: ws
+  ws-opts:
+    path: /danfeng?ed=2560
+    headers:
+      Host: p3lydb507umi.chinav.eu.org
+  tls: true
+  sni: p3lydb507umi.chinav.eu.org
   skip-cert-verify: false
-  udp: true
-- name: 🇩🇪 DE德国-01
-  type: vmess
-  server: gtm1.ktmwan.net
-  port: 12898
-  uuid: bbd785de-9793-4453-be40-6a3fdc418203
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: baidu.com
-  ws-path: /
-  ws-headers:
-    Host: baidu.com
-- name: 🇫🇷 FR法国-01
-  type: vmess
-  server: gtm1.ktmwan.net
-  port: 12899
-  uuid: bbd785de-9793-4453-be40-6a3fdc418203
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: baidu.com
-  ws-path: /
-  ws-headers:
-    Host: baidu.com
-- name: 🇸🇬新加坡01丨IEPL丨2x
+- name: 🇮🇩印度尼西亚丨IEPL丨2x
   type: trojan
-  server: sg1.f-vip.top
-  port: 25210
+  server: id1.f-vip.top
+  port: 25320
   password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
   udp: true
   sni: v1-dy.ixigua.com
   skip-cert-verify: true
-- name: 🇭🇰 HK香港-01
+- name: 🇰🇷 机场推荐:dafei.de 韩国 03
+  password: test.+
+  port: 30446
+  server: testkr3.ssv.vc
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: test
+  sni: testkr3.ssv.vc
+- name: 🇻🇳越南丨IEPL丨2x
+  type: trojan
+  server: vn1.f-vip.top
+  port: 25280
+  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
+  udp: true
+  sni: v1-dy.ixigua.com
+  skip-cert-verify: true
+- name: 🇰🇭柬埔寨丨IEPL丨2x
+  type: trojan
+  server: kh1.f-vip.top
+  port: 25300
+  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
+  udp: true
+  sni: v1-dy.ixigua.com
+  skip-cert-verify: true
+- name: 🇺🇸美国家宽丨IEPL丨4x
+  type: trojan
+  server: us3.f-vip.top
+  port: 25251
+  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
+  udp: true
+  sni: v1-dy.ixigua.com
+  skip-cert-verify: true
+- name: 🇨🇳 TW台湾-01
   type: vmess
   server: gtm1.ktmwan.net
-  port: 12890
+  port: 12888
   uuid: bbd785de-9793-4453-be40-6a3fdc418203
   alterId: 0
   cipher: auto
@@ -4413,10 +4178,10 @@ proxies:
   ws-path: /
   ws-headers:
     Host: baidu.com
-- name: 🇮🇳 IN印度-01
+- name: 🇬🇧 UK英国-01
   type: vmess
   server: gtm1.ktmwan.net
-  port: 12887
+  port: 12886
   uuid: bbd785de-9793-4453-be40-6a3fdc418203
   alterId: 0
   cipher: auto
@@ -4429,10 +4194,66 @@ proxies:
   ws-path: /
   ws-headers:
     Host: baidu.com
-- name: 🇨🇳 TW台湾-01
+- name: 🇯🇵日本01丨IEPL丨2x
+  type: trojan
+  server: jp1.f-vip.top
+  port: 25160
+  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
+  udp: true
+  sni: v1-dy.ixigua.com
+  skip-cert-verify: true
+- name: 🇫🇷 FR法国-01
   type: vmess
   server: gtm1.ktmwan.net
-  port: 12888
+  port: 12899
+  uuid: bbd785de-9793-4453-be40-6a3fdc418203
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: baidu.com
+  ws-path: /
+  ws-headers:
+    Host: baidu.com
+- name: 🇩🇪 DE德国-01
+  type: vmess
+  server: gtm1.ktmwan.net
+  port: 12898
+  uuid: bbd785de-9793-4453-be40-6a3fdc418203
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: baidu.com
+  ws-path: /
+  ws-headers:
+    Host: baidu.com
+- name: 🇸🇬 SG新加坡-01
+  type: vmess
+  server: gtm1.ktmwan.net
+  port: 12901
+  uuid: bbd785de-9793-4453-be40-6a3fdc418203
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: baidu.com
+  ws-path: /
+  ws-headers:
+    Host: baidu.com
+- name: 🇮🇳 IN印度-01
+  type: vmess
+  server: gtm1.ktmwan.net
+  port: 12887
   uuid: bbd785de-9793-4453-be40-6a3fdc418203
   alterId: 0
   cipher: auto
@@ -4461,10 +4282,26 @@ proxies:
   ws-path: /
   ws-headers:
     Host: baidu.com
-- name: 🇯🇵 JP日本-01
+- name: 🇺🇸 USA美国-01
   type: vmess
   server: gtm1.ktmwan.net
-  port: 12883
+  port: 12885
+  uuid: bbd785de-9793-4453-be40-6a3fdc418203
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: baidu.com
+  ws-path: /
+  ws-headers:
+    Host: baidu.com
+- name: 🇭🇰 HK香港-01
+  type: vmess
+  server: gtm1.ktmwan.net
+  port: 12890
   uuid: bbd785de-9793-4453-be40-6a3fdc418203
   alterId: 0
   cipher: auto
@@ -4493,17 +4330,26 @@ proxies:
   ws-path: /
   ws-headers:
     Host: baidu.com
-- name: 美国03|L1节点|解锁
-  type: ss
-  server: us01.x.kuaimaonodebgp.com
-  port: 52673
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
+- name: 🇹🇼台湾02丨IEPL丨2x
+  type: trojan
+  server: tw2.f-vip.top
+  port: 25150
+  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
   udp: true
-- name: 🇺🇸 USA美国-01
+  sni: v1-dy.ixigua.com
+  skip-cert-verify: true
+- name: 🇭🇰 机场推荐:dafei.de 香港 10
+  server: hkt-ddns.baipiao0721-dns78655.eu
+  port: 18443
+  type: anytls
+  password: 23b3b239-96e2-4e62-8d53-36bacbc9f2ea
+  udp: true
+  skip-cert-verify: true
+  sni: hkt-ddns.baipiao0721-dns78655.eu
+- name: 🇯🇵 JP日本-01
   type: vmess
   server: gtm1.ktmwan.net
-  port: 12885
+  port: 12883
   uuid: bbd785de-9793-4453-be40-6a3fdc418203
   alterId: 0
   cipher: auto
@@ -4516,50 +4362,6 @@ proxies:
   ws-path: /
   ws-headers:
     Host: baidu.com
-- name: 🇺🇸美国01丨IEPL丨2x
-  type: trojan
-  server: us1.f-vip.top
-  port: 25230
-  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
-  udp: true
-  sni: v1-dy.ixigua.com
-  skip-cert-verify: true
-- name: 🇸🇬新加坡02丨IEPL丨2x
-  type: trojan
-  server: sg2.f-vip.top
-  port: 25220
-  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
-  udp: true
-  sni: v1-dy.ixigua.com
-  skip-cert-verify: true
-- name: 韩国02|L1节点|解锁
-  type: ss
-  server: kr01.x.kuaimaonodebgp.com
-  port: 52602
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
-  udp: true
-- name: 韩国01|L1节点|解锁
-  type: ss
-  server: kr01.x.kuaimaonodebgp.com
-  port: 52601
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
-  udp: true
-- name: 美国02|L1节点|解锁
-  type: ss
-  server: us01.x.kuaimaonodebgp.com
-  port: 52672
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
-  udp: true
-- name: 美国01|L1节点|解锁
-  type: ss
-  server: us01.x.kuaimaonodebgp.com
-  port: 52671
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
-  udp: true
 - name: 🇹🇭泰国丨IEPL丨2x
   type: trojan
   server: th1.f-vip.top
@@ -4568,103 +4370,22 @@ proxies:
   udp: true
   sni: v1-dy.ixigua.com
   skip-cert-verify: true
-- name: 🇭🇰香港02丨IEPL丨2x
+- name: 🇲🇾马来西亚丨IEPL丨3x
   type: trojan
-  server: hk2.f-vip.top
-  port: 25110
+  server: my1.f-vip.top
+  port: 25311
   password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
   udp: true
   sni: v1-dy.ixigua.com
   skip-cert-verify: true
-- name: 🇻🇳越南丨IEPL丨2x
+- name: 🇹🇼台湾01丨IEPL丨2x
   type: trojan
-  server: vn1.f-vip.top
-  port: 25280
+  server: tw1.f-vip.top
+  port: 25140
   password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
   udp: true
   sni: v1-dy.ixigua.com
   skip-cert-verify: true
-- name: 🇰🇭柬埔寨丨IEPL丨2x
-  type: trojan
-  server: kh1.f-vip.top
-  port: 25300
-  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
-  udp: true
-  sni: v1-dy.ixigua.com
-  skip-cert-verify: true
-- name: 🇧🇷_BR_巴西->🇷🇺_RU_俄罗斯
-  type: vless
-  server: azaranik.ir
-  port: 2053
-  uuid: 7b3ba8c0-0bb2-469a-a396-1c360e7da8d7
-  network: ws
-  servername: kffoepwiqmiovvunwoowow2jowpqpwkc892.mrpixanos.ir
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: kffoepwiqmiovvunwoowow2jowpqpwkc892.mrpixanos.ir
-- name: 🇰🇷 机场推荐:dafei.de 韩国 03
-  password: test.+
-  port: 30446
-  server: testkr3.ssv.vc
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: test
-  sni: testkr3.ssv.vc
-- name: 🇭🇰香港03丨IEPL丨2x
-  type: trojan
-  server: hk3.f-vip.top
-  port: 25120
-  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
-  udp: true
-  sni: v1-dy.ixigua.com
-  skip-cert-verify: true
-- name: 🇹🇼台湾02丨IEPL丨2x
-  type: trojan
-  server: tw2.f-vip.top
-  port: 25150
-  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
-  udp: true
-  sni: v1-dy.ixigua.com
-  skip-cert-verify: true
-- name: 🇮🇩印度尼西亚丨IEPL丨2x
-  type: trojan
-  server: id1.f-vip.top
-  port: 25320
-  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
-  udp: true
-  sni: v1-dy.ixigua.com
-  skip-cert-verify: true
-- name: 🇭🇰香港04丨IEPL丨2x
-  type: trojan
-  server: hk4.f-vip.top
-  port: 25130
-  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
-  udp: true
-  sni: v1-dy.ixigua.com
-  skip-cert-verify: true
-- name: 🇨🇦加拿大家宽丨IEPL丨3x
-  type: trojan
-  server: ca1.f-vip.top
-  port: 25260
-  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
-  udp: true
-  sni: v1-dy.ixigua.com
-  skip-cert-verify: true
-- name: 🇬🇧_GB_英国->🇯🇵_JP_日本
-  type: vless
-  server: braskivo.ru
-  port: 8443
-  uuid: cadadce7-0daa-44c1-9f7a-05fe4ebcbb30
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  sni: rbc.ru
-  skip-cert-verify: false
 - name: 🇨🇳_CN_中国
   type: vmess
   server: a.cdn-bilibili.cn
@@ -4674,54 +4395,26 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: false
-- name: 🇭🇰 机场推荐:dafei.de 香港 10
-  server: hkt-ddns.baipiao0721-dns78655.eu
-  port: 18443
-  type: anytls
-  password: 23b3b239-96e2-4e62-8d53-36bacbc9f2ea
+- name: 🇸🇬新加坡02丨IEPL丨2x
+  type: trojan
+  server: sg2.f-vip.top
+  port: 25220
+  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
   udp: true
+  sni: v1-dy.ixigua.com
   skip-cert-verify: true
-  sni: hkt-ddns.baipiao0721-dns78655.eu
-- name: 橘子电报频道@juzibaipiao_1
-  type: vless
-  server: www.visa.cn
-  port: 2053
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  udp: true
-  network: ws
-  ws-opts:
-    path: /danfeng?ed=2560
-    headers:
-      Host: p3lydb507umi.chinav.eu.org
-  tls: true
-  sni: p3lydb507umi.chinav.eu.org
-  skip-cert-verify: false
-- name: 🇨🇿_CZ_捷克->🇺🇸_US_美国
-  type: vless
-  server: quarenty.site
-  port: 8443
-  uuid: ef3e2141-14d9-4764-8960-e7fe539c9bc6
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  sni: rbc.ru
-  skip-cert-verify: false
-- name: 🇬🇧 机场推荐:dafei.de 英国 01
-  type: vless
-  server: gbr1.frostbot.ru
-  port: 6443
-  uuid: 5b77fb18-cece-4759-9a81-571f1be53e0c
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: x-VSf_bBIC1iELDvaoM4SKMTK2YAAnUlVkhAWBbvpSc
-    short-id: b9605803fb4b
-  sni: gbr1.frostbot.ru
 - name: 🇯🇵日本02丨IEPL丨2x
   type: trojan
   server: jp2.f-vip.top
   port: 25170
+  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
+  udp: true
+  sni: v1-dy.ixigua.com
+  skip-cert-verify: true
+- name: 🇹🇷土耳其丨IEPL丨2x
+  type: trojan
+  server: tr1.f-vip.top
+  port: 25380
   password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
   udp: true
   sni: v1-dy.ixigua.com
@@ -4734,14 +4427,38 @@ proxies:
   udp: true
   sni: v1-dy.ixigua.com
   skip-cert-verify: true
-- name: 🇭🇰香港01丨IEPL丨2x
+- name: 🇭🇰香港02丨IEPL丨2x
   type: trojan
-  server: hk1.f-vip.top
-  port: 25100
+  server: hk2.f-vip.top
+  port: 25110
   password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
   udp: true
   sni: v1-dy.ixigua.com
   skip-cert-verify: true
+- name: 🇸🇬新加坡01丨IEPL丨2x
+  type: trojan
+  server: sg1.f-vip.top
+  port: 25210
+  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
+  udp: true
+  sni: v1-dy.ixigua.com
+  skip-cert-verify: true
+- name: 🇺🇸美国02丨IEPL丨2x
+  type: trojan
+  server: us2.f-vip.top
+  port: 25240
+  password: 3d1ee73d-9659-47b3-8db9-6eb591c74a04
+  udp: true
+  sni: v1-dy.ixigua.com
+  skip-cert-verify: true
+- name: 🇨🇳 台湾6 家宽
+  type: hysteria2
+  server: starlink-tw6.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 20118
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
 - name: 🇨🇳 台湾12 家宽
   type: trojan
   server: starlink-tw6.mfa.cat
@@ -4750,11 +4467,27 @@ proxies:
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳 台湾6 家宽
-  type: hysteria2
-  server: starlink-tw6.mfa.cat
+- name: 🇨🇳 台湾8 家宽
+  type: trojan
+  server: starlink-tw2.mfa.cat
   password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 20118
+  port: 20110
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳 台湾9 家宽
+  type: trojan
+  server: starlink-tw3.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 12409
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇨🇳 台湾3 家宽
+  type: hysteria2
+  server: starlink-tw3.mfa.cat
+  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
+  port: 12403
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
@@ -4766,14 +4499,6 @@ proxies:
   sni: www.cloudflare.com
   skip-cert-verify: true
   udp: true
-- name: 🇨🇳 台湾11 家宽
-  type: trojan
-  server: starlink-tw5.mfa.cat
-  password: pro@_LlpRWwEh4tRl4cSzc0TZDxM
-  port: 12408
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-  udp: true
 - name: 🇨🇳 台湾5 家宽
   type: hysteria2
   server: starlink-tw5.mfa.cat
@@ -4781,27 +4506,6 @@ proxies:
   port: 12405
   sni: www.cloudflare.com
   skip-cert-verify: true
-  udp: true
-- name: 香港05|L1节点|解锁
-  type: ss
-  server: hk01.x.kuaimaonodebgp.com
-  port: 52615
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
-  udp: true
-- name: 香港04|L1节点|解锁
-  type: ss
-  server: hk01.x.kuaimaonodebgp.com
-  port: 52614
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
-  udp: true
-- name: 香港03|L1节点|解锁
-  type: ss
-  server: hk01.x.kuaimaonodebgp.com
-  port: 52613
-  cipher: chacha20-ietf-poly1305
-  password: 8c81607e-a261-4277-9240-0ac2923f887d
   udp: true
 - name: 🇨🇳 台湾2 家宽
   type: hysteria2
