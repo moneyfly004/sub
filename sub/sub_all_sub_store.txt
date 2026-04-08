@@ -1,7 +1,6 @@
 -- play_list --
 
 
-https://baipiaoyun-oss.freeloadcloud.eu/api/v1/client/subscribe?token=040c77fafccf39f903b38d89d5ea3564
 https://vip.putata.eu.org/oao
 https://2.juanwangjc.top/juanwang/dingyue1/sub1/babiq?token=1a7a3ead1236137ee05d77bd6a21af7e
 https://sub.pusytroller.cf/?url=freenodes
@@ -9,7 +8,6 @@ https://btxst.eu.cc/sub?token=1fb3e82d731ba1493627e9ad7a53e49b
 https://rssstarlink.ei38d3if3.xyz/s/98af3187300682a2d051e31a27d213ba
 https://wylztxfq.qjty1.buzz/api/v2/user/token/308e6ee53eee87937f3a8c5c61b09b5c
 http://store.mmins.top/api/v3/client/018d74e5e972a6d4a616f906fc8ca5f2
-https://cccloud.zangcloud.xyz/ai/m3u8/xppt/sub?token=a885d9fbeefc0249fd9a84632f7c18d5
 https://www9.9th-subscription-from-chickenfarmer.top/api/v1/client/subscribe?token=d761cf14344d6ddd20663ef8c971b798
 https://vortex12.qjty.buzz/api/v2/user/token/7041431d14ad83ef71e49dc777b2c5c6
 https://sub.zhilian.best/getjiedian/030d22125c844ccab331ee78291be4c9
@@ -19,7 +17,10 @@ https://tmrcfylw.qjty1.buzz/api/v2/user/token/494d13a95d4ca330a25b1e82f95bacb2
 https://gwjvmthr.qjty1.buzz/api/v2/user/token/ed8341acf3999aef2d58640c9405b099
 https://zkjrvbxy.qjty1.buzz/api/v2/user/token/e53732f31dea01ee1353f99d89d52e34
 https://mhxwfgsl.qjty1.buzz/api/v2/user/token/bd4946f594c2997bad3602142c69f1c0
+https://baipiaoyun-oss.freeloadcloud.eu/api/v1/client/subscribe?token=040c77fafccf39f903b38d89d5ea3564
+https://suba.f2vip.net/api/v1/client/subscribe?token=fbc847a512cba3ce604819abf1f75e69
 https://www.xrayvip.com/free.txt
+https://suba.f2vip.net/api/v1/client/subscribe?token=5e0be3bb578c8cf69905a7cbfdf271bd
 
 
 -- sub_list --
@@ -180,6 +181,7 @@ https://suba.f2vip.net/api/v1/client/subscribe?token=4a1f08ccc9331a8c737446538d1
 https://suba.f2vip.net/api/v1/client/subscribe?token=5261673448c40ecc3d3ff5824121e1fd
 https://suba.f2vip.net/api/v1/client/subscribe?token=5967bfeb1966add9388c97c168c9534d
 https://suba.f2vip.net/api/v1/client/subscribe?token=5c4d77cb18fb61d420ebf1cb8eb2883b
+https://suba.f2vip.net/api/v1/client/subscribe?token=5e0be3bb578c8cf69905a7cbfdf271bd
 https://suba.f2vip.net/api/v1/client/subscribe?token=68056685dfe45c80095cdc48d278da6a
 https://suba.f2vip.net/api/v1/client/subscribe?token=6b32ba737c3d0948515ad56a27f5415e
 https://suba.f2vip.net/api/v1/client/subscribe?token=6e621af4abee16e1ca8685fedf0306f4
@@ -212,6 +214,7 @@ https://suba.f2vip.net/api/v1/client/subscribe?token=dbbe5dae01e2ef61a1c3906ae32
 https://suba.f2vip.net/api/v1/client/subscribe?token=dfb1122e73c12d4e27a649c515e09426
 https://suba.f2vip.net/api/v1/client/subscribe?token=f6317f324e581abdd5f46e5f619c44c1
 https://suba.f2vip.net/api/v1/client/subscribe?token=fa5edc251d0c8749211dac53aca3b2dd
+https://suba.f2vip.net/api/v1/client/subscribe?token=fbc847a512cba3ce604819abf1f75e69
 https://subscribe-3-emo.xxmad.com/s/ad07cb5bc654d533085cb027467b22df
 https://sudaji.eepzau.org/api/v1/client/subscribe?token=1851a5d71d4ebe62ced658417b163f4c
 https://sudaji.eepzau.org/api/v1/client/subscribe?token=22ae44d07e798805ea60cc91b4e552a4
